@@ -43,4 +43,10 @@
     <string name="security_settings_fingerprint_sensor_location_left">left side</string>
     <string name="security_settings_fingerprint_sensor_location_right">right side</string>
 
+    <!-- Home handle sizing -->
+    <string name="back_options_dialog_title">Options</string>
+    <string name="home_handle_sizer_title">Gesture bar size</string>
+    <string name="home_handle_low_label">Small</string>
+    <string name="home_handle_high_label">Large</string>
+
 </resources>

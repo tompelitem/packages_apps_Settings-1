@@ -20,6 +20,12 @@
     android:title="@string/conqueros_version_title"
     settings:keywords="@string/keywords_conqueros_version">
 
+    <!-- ConquerOS logo -->
+    <PreferenceScreen
+        android:key="conquer_logo"
+        android:enabled="false"
+        android:layout="@layout/conquer_logo" />
+
     <!-- ConquerOS version -->
     <Preference
         android:key="conqueros_version"

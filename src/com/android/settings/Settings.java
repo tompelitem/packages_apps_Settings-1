@@ -180,4 +180,7 @@ public class Settings extends SettingsActivity {
     public static class SupportDashboardActivity extends SettingsActivity {}
     public static class SMQQtiFeedbackActivity extends SettingsActivity { /* empty */ }
 
+    // ControlPanel
+    public static class ControlPanelActivity extends SettingsActivity { /* empty */ }
+
 }

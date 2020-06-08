@@ -35,8 +35,8 @@ public class SystemUpdatePreferenceController extends BasePreferenceController {
 
     private static final String KEY_SYSTEM_UPDATE_SETTINGS = "system_update_settings";
 
-    private static final String OTA_BUILD_TYPE_PROP = "ro.conquer.buildtype";
-    private static final String OTA_APP_PACKAGE = "com.conquer.ota";
+    private static final String OTA_BUILD_TYPE_PROP = "ro.conquer.build.type";
+    private static final String OTA_APP_PACKAGE = "com.conquer.updater";
 
     private final UserManager mUm;
 

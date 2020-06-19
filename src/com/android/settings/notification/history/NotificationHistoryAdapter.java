@@ -49,13 +49,16 @@ public class NotificationHistoryAdapter extends
 
     private INotificationManager mNm;
     private List<HistoricalNotification> mValues;
+    private OnItemDeletedListener mListener;
 
     public NotificationHistoryAdapter(INotificationManager nm,
-            NotificationHistoryRecyclerView listView) {
+            NotificationHistoryRecyclerView listView,
+            OnItemDeletedListener listener) {
         mValues = new ArrayList<>();
         setHasStableIds(true);
         listView.setOnItemSwipeDeleteListener(this);
         mNm = nm;
+        mListener = listener;
     }
 
     @Override
@@ -98,7 +101,8 @@ public class NotificationHistoryAdapter extends
             public boolean performAccessibilityAction(View host, int action, Bundle args) {
                 super.performAccessibilityAction(host, action, args);
                 if (action == AccessibilityNodeInfo.AccessibilityAction.ACTION_DISMISS.getId()) {
-                    onItemSwipeDeleted(position);
+                    int currPosition = mValues.indexOf(hn);
+                    onItemSwipeDeleted(currPosition);
                     return true;
                 }
                 return false;
@@ -119,6 +123,11 @@ public class NotificationHistoryAdapter extends
 
     @Override
     public void onItemSwipeDeleted(int position) {
+        if (position > (mValues.size() - 1)) {
+            Slog.d(TAG, "Tried to swipe element out of list: position: " + position
+                    + " size? " + mValues.size());
+            return;
+        }
         HistoricalNotification hn = mValues.remove(position);
         if (hn != null) {
             try {
@@ -128,6 +137,11 @@ public class NotificationHistoryAdapter extends
                 Slog.e(TAG, "Failed to delete item", e);
             }
         }
+        mListener.onItemDeleted(mValues.size());
         notifyItemRemoved(position);
+    }
+
+    interface OnItemDeletedListener {
+        void onItemDeleted(int newCount);
     }
 }

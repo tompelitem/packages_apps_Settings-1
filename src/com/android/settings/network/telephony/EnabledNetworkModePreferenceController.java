@@ -199,7 +199,6 @@ public class EnabledNetworkModePreferenceController extends
         private Context mContext;
         private TelephonyManager mTelephonyManager;
 
-        private boolean mAllowed5gNetworkType;
         private boolean mIsGlobalCdma;
         private boolean mIs5gEntryDisplayed;
         private boolean mShow4gForLTE;
@@ -235,13 +234,13 @@ public class EnabledNetworkModePreferenceController extends
                     .createForSubscriptionId(mSubId);
 
             final PersistableBundle carrierConfig = mCarrierConfigManager.getConfigForSubId(mSubId);
-            mAllowed5gNetworkType = checkSupportedRadioBitmask(
-                    mTelephonyManager.getAllowedNetworkTypes(),
-                    TelephonyManager.NETWORK_TYPE_BITMASK_NR);
-            mSupported5gRadioAccessFamily = checkSupportedRadioBitmask(
-                    mTelephonyManager.getSupportedRadioAccessFamily(),
+            final boolean isNrEnabledFromCarrierConfig = carrierConfig != null
+                    && carrierConfig.getBoolean(CarrierConfigManager.KEY_NR_ENABLED_BOOL);
+            mSupported5gRadioAccessFamily = isNrEnabledFromCarrierConfig
+                    && checkSupportedRadioBitmask(mTelephonyManager.getSupportedRadioAccessFamily(),
                     TelephonyManager.NETWORK_TYPE_BITMASK_NR);
             mIsGlobalCdma = mTelephonyManager.isLteCdmaEvdoGsmWcdmaEnabled()
+                    && carrierConfig != null
                     && carrierConfig.getBoolean(CarrierConfigManager.KEY_SHOW_CDMA_CHOICES_BOOL);
             mShow4gForLTE = carrierConfig != null && carrierConfig.getBoolean(
                     CarrierConfigManager.KEY_SHOW_4G_FOR_LTE_DATA_ICON_BOOL);
@@ -663,11 +662,11 @@ public class EnabledNetworkModePreferenceController extends
         }
 
         /**
-         * Add 5G option. Only show the UI when device supported 5G and allowed 5G.
+         * Add 5G option. Only show the UI when device supported 5G.
          */
         private void add5gEntry(int value) {
             boolean isNRValue = value >= TelephonyManagerConstants.NETWORK_MODE_NR_ONLY;
-            if (mSupported5gRadioAccessFamily && mAllowed5gNetworkType && isNRValue) {
+            if (showNrList() && isNRValue) {
                 mEntries.add(mContext.getString(R.string.network_5G)
                         + mContext.getString(R.string.network_recommended));
                 mEntriesValue.add(value);
@@ -676,17 +675,15 @@ public class EnabledNetworkModePreferenceController extends
                 mIs5gEntryDisplayed = false;
                 Log.d(LOG_TAG, "Hide 5G option. "
                         + " supported5GRadioAccessFamily: " + mSupported5gRadioAccessFamily
-                        + " allowed5GNetworkType: " + mAllowed5gNetworkType
                         + " isNRValue: " + isNRValue);
             }
         }
 
         private void addGlobalEntry() {
             Log.d(LOG_TAG, "addGlobalEntry. "
-                    + " supported5GRadioAccessFamily: " + mSupported5gRadioAccessFamily
-                    + " allowed5GNetworkType: " + mAllowed5gNetworkType);
+                    + " supported5GRadioAccessFamily: " + mSupported5gRadioAccessFamily);
             mEntries.add(mContext.getString(R.string.network_global));
-            if (mSupported5gRadioAccessFamily & mAllowed5gNetworkType) {
+            if (showNrList()) {
                 mEntriesValue.add(
                         TelephonyManagerConstants.NETWORK_MODE_NR_LTE_CDMA_EVDO_GSM_WCDMA);
             } else {
@@ -695,11 +692,15 @@ public class EnabledNetworkModePreferenceController extends
             }
         }
 
+        private boolean showNrList() {
+            return mSupported5gRadioAccessFamily;
+        }
+
         /**
          * Add LTE entry. If device supported 5G, show "LTE" instead of "LTE (recommended)".
          */
         private void addLteEntry(int value) {
-            if (mSupported5gRadioAccessFamily) {
+            if (showNrList()) {
                 mEntries.add(mContext.getString(R.string.network_lte_pure));
             } else {
                 mEntries.add(mContext.getString(R.string.network_lte));
@@ -711,7 +712,7 @@ public class EnabledNetworkModePreferenceController extends
          * Add 4G entry. If device supported 5G, show "4G" instead of "4G (recommended)".
          */
         private void add4gEntry(int value) {
-            if (mSupported5gRadioAccessFamily) {
+            if (showNrList()) {
                 mEntries.add(mContext.getString(R.string.network_4G_pure));
             } else {
                 mEntries.add(mContext.getString(R.string.network_4G));

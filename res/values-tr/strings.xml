@@ -428,9 +428,9 @@
     <string name="fingerprint_lock_screen_setup_skip_dialog_text" product="tablet" msgid="6901147203720764421">"Kaybolur veya çalınırsa tabletinizi kimsenin kullanamaması için ekran kilidi seçeneğiyle koruyun. Parmak izi ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. İptal\'e dokunup bir PIN, desen veya şifre ayarlayın."</string>
     <string name="fingerprint_lock_screen_setup_skip_dialog_text" product="device" msgid="1286244133923093528">"Kaybolur veya çalınırsa cihazınızı kimsenin kullanamaması için ekran kilidi seçeneğiyle koruyun. Parmak izi ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. İptal\'e dokunup bir PIN, desen veya şifre ayarlayın."</string>
     <string name="fingerprint_lock_screen_setup_skip_dialog_text" product="default" msgid="4810191157587317521">"Kaybolur veya çalınırsa telefonunuzu kimsenin kullanamaması için ekran kilidi seçeneğiyle koruyun. Parmak izi ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. İptal\'e dokunup bir PIN, desen veya şifre ayarlayın."</string>
-    <string name="face_lock_screen_setup_skip_dialog_text" product="tablet" msgid="7387535629289108475">"Tabletinizi ekran kilidi seçeneğiyle koruyarak kaybolması veya çalınması durumunda başkalarının kullanmasını engellersiniz. Yüz tanıma kilidini ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. Geri gidin ve İptal\'e dokunun."</string>
-    <string name="face_lock_screen_setup_skip_dialog_text" product="device" msgid="4995287019957131123">"Cihazınızı ekran kilidi seçeneğiyle koruyarak kaybolması veya çalınması durumunda başkalarının kullanmasını engellersiniz. Yüz tanıma kilidini ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. Geri gidin ve İptal\'e dokunun."</string>
-    <string name="face_lock_screen_setup_skip_dialog_text" product="default" msgid="7086796722966738156">"Telefonunuzu ekran kilidi seçeneğiyle koruyarak kaybolması veya çalınması durumunda başkalarının kullanmasını engellersiniz. Yüz tanıma kilidini ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. Geri gidin ve İptal\'e dokunun."</string>
+    <string name="face_lock_screen_setup_skip_dialog_text" product="tablet" msgid="7387535629289108475">"Tabletinizi ekran kilidi seçeneğiyle koruyarak kaybolması veya çalınması durumunda başkalarının kullanmasını engellersiniz. Yüz tanıma kilidini ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. Geri gitmek için İptal\'e dokunun."</string>
+    <string name="face_lock_screen_setup_skip_dialog_text" product="device" msgid="4995287019957131123">"Cihazınızı ekran kilidi seçeneğiyle koruyarak kaybolması veya çalınması durumunda başkalarının kullanmasını engellersiniz. Yüz tanıma kilidini ayarlamak için ayrıca bir ekran kilidi seçeneğine ihtiyacınız var. Geri gitmek için İptal\'e dokunun."</string>
+    <string name="face_lock_screen_setup_skip_dialog_text" product="default" msgid="7086796722966738156">"Telefonunuzu ekran kilidi seçeneğiyle koruyarak, kaybolması veya çalınması durumunda başkaları tarafından kullanılmasını engelleyebilirsiniz. Yüz tanıma kilidini ayarlamak için de bir ekran kilidi seçeneğine ihtiyacınız vardır. Geri gitmek için İptal\'e dokunun."</string>
     <string name="lock_screen_pin_skip_title" msgid="6853866579893458111">"PIN kurulumu atlansın mı?"</string>
     <string name="lock_screen_password_skip_title" msgid="8891463713793185768">"Şifre kurulumu atlansın mı?"</string>
     <string name="lock_screen_pattern_skip_title" msgid="7214938393640060932">"Desen kurulumu atlansın mı?"</string>
@@ -586,7 +586,7 @@
     <string name="unlock_footer_medium_complexity_requested" msgid="5515870066751600640">"<xliff:g id="APP_NAME">%1$s</xliff:g> yeni bir PIN veya şifre öneriyor ve bu olmadan beklendiği gibi çalışmayabilir"</string>
     <string name="unlock_footer_low_complexity_requested" msgid="2517656037576567971">"<xliff:g id="APP_NAME">%1$s</xliff:g> yeni bir desen, PIN veya şifre öneriyor ve bu olmadan beklendiği gibi çalışmayabilir."</string>
     <string name="unlock_footer_none_complexity_requested" msgid="8534900170428140529">"<xliff:g id="APP_NAME">%1$s</xliff:g> yeni bir ekran kilidi öneriyor"</string>
-    <string name="lock_failed_attempts_before_wipe" msgid="6874652886647631418">"Tekrar deneyin. Toplam <xliff:g id="TOTAL_ATTEMPTS">%2$d</xliff:g> denemeden <xliff:g id="CURRENT_ATTEMPTS">%1$d</xliff:g> hakkınız kaldı."</string>
+    <string name="lock_failed_attempts_before_wipe" msgid="6874652886647631418">"Tekrar deneyin. Deneme:  <xliff:g id="CURRENT_ATTEMPTS">%1$d</xliff:g>/<xliff:g id="TOTAL_ATTEMPTS">%2$d</xliff:g>."</string>
     <string name="lock_last_attempt_before_wipe_warning_title" msgid="7450322567217745999">"Verileriniz silinecek"</string>
     <string name="lock_last_pattern_attempt_before_wipe_device" msgid="5816668400104558952">"Bir sonraki denemenizde yanlış desen girerseniz bu cihazın verileri silinecek"</string>
     <string name="lock_last_pin_attempt_before_wipe_device" msgid="2815681042623708775">"Bir sonraki denemenizde yanlış PIN girerseniz bu cihazın verileri silinecek"</string>
@@ -1187,6 +1187,8 @@
     <string name="auto_brightness_description" msgid="6807117118142381193">"Ekranınızın parlaklığı, bulunduğunuz ortama ve aktivitelerinize göre otomatik olarak ayarlanır. Otomatik parlaklık özelliğinin tercihlerinizi öğrenmesine yardımcı olmak için kaydırma çubuğunu manuel olarak hareket ettirebilirsiniz."</string>
     <string name="display_white_balance_title" msgid="2624544323029364713">"Beyaz dengeyi göster"</string>
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
+    <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Smooth Display"</string>
+    <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Bazı içerikler için yenileme hızını otomatik olarak 60 Hz\'den 90 Hz\'e yükseltir. Pil kullanımını artırır."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Ekrana dikkat verme"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Açık / Bakıyorsanız ekran kapanmaz"</string>
     <string name="adaptive_sleep_summary_off" msgid="5272156339202897523">"Kapat"</string>
@@ -1251,7 +1253,7 @@
     <string name="style_and_wallpaper_settings_title" msgid="7580575814098427579">"Stiller ve duvar kağıtları"</string>
     <string name="wallpaper_settings_summary_default" msgid="7569803705735001813">"Varsayılan"</string>
     <string name="wallpaper_settings_summary_custom" msgid="3174561317688848729">"Özel"</string>
-    <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Duvar kağıdını değiştirin"</string>
+    <string name="wallpaper_suggestion_title" msgid="3812842717939877330">"Duvar kağıdını değiştir"</string>
     <string name="wallpaper_suggestion_summary" msgid="9077061486716754784">"Ekranınızı kişiselleştirin"</string>
     <string name="wallpaper_settings_fragment_title" msgid="8445963841717633149">"Şuradan duvar kağıdı seçin:"</string>
     <string name="style_suggestion_title" msgid="1213747484782364775">"Telefonunuzu özelleştirme"</string>
@@ -2019,7 +2021,7 @@
     <string name="spellchecker_language" msgid="8905487366580285282">"Dil"</string>
     <string name="keyboard_and_input_methods_category" msgid="5296847777802891649">"Klavyeler"</string>
     <string name="virtual_keyboard_category" msgid="2339505603075527212">"Ekran klavyesi"</string>
-    <string name="available_virtual_keyboard_category" msgid="2191399236305207950">"Kullanılabilir sanal klavye"</string>
+    <string name="available_virtual_keyboard_category" msgid="6930012948152749337">"Kullanılabilir dokunmatik klavye"</string>
     <string name="add_virtual_keyboard" msgid="2515850206289352606">"Ekran klavyelerini yönet"</string>
     <string name="keyboard_assistance_category" msgid="7320599809770932032">"Klavye yardımı"</string>
     <string name="physical_keyboard_title" msgid="3328134097512350958">"Fiziksel klavye"</string>
@@ -2028,7 +2030,7 @@
     <string name="keyboard_shortcuts_helper" msgid="2553221039203165344">"Klavye kısayolları"</string>
     <string name="keyboard_shortcuts_helper_summary" msgid="8649760728213630156">"Kullanılabilir kısayolları görüntüle"</string>
     <string name="language_and_input_for_work_category_title" msgid="2546950919124199743">"İş profili klavyeleri ve araçları"</string>
-    <string name="virtual_keyboards_for_work_title" msgid="3423496805741863134">"İş için sanal klavye"</string>
+    <string name="virtual_keyboards_for_work_title" msgid="786459157034008675">"İş için dokunmatik klavye"</string>
     <string name="default_keyboard_layout" msgid="8690689331289452201">"Varsayılan"</string>
     <string name="pointer_speed" msgid="7398649279282675718">"İşaretçi hızı"</string>
     <string name="game_controller_settings_category" msgid="8557472715034961918">"Oyun Denetleyici"</string>
@@ -2125,6 +2127,7 @@
     <string name="accessibility_screen_magnification_navbar_short_summary" msgid="4885018322430052037">"Yakınlaştırmak için bir düğmeye dokunun"</string>
     <string name="accessibility_screen_magnification_summary" msgid="2023126829553044999">"İçeriği daha net görüntülemek için ekranı hızlıca yakınlaştırın.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Yakınlaştırmak için:&lt;/b&gt;&lt;br/&gt; 1. Büyütmeyi başlatmak için kısayolu kullanın&lt;br/&gt; 2. Ekrana dokunun&lt;br/&gt; 3. Ekranda gezinmek için 2 parmağınızı sürükleyin&lt;br/&gt; 4. Yakınlaştırmayı ayarlamak için 2 parmağınızla sıkıştırın&lt;br/&gt; 5. Büyütmeyi durdurmak için kısayolu kullanın&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Geçici bir süreliğine yakınlaştırmak için:&lt;/b&gt;&lt;br/&gt; 1. Büyütmeyi başlatmak için kısayolu kullanın&lt;br/&gt; 2. Ekranda herhangi bir yere dokunup basılı tutun&lt;br/&gt; 3. Ekranda gezinmek için parmağınızı sürükleyin&lt;br/&gt; 4. Büyütmeyi durdurmak için parmağınızı kaldırın"</string>
     <string name="accessibility_screen_magnification_navbar_summary" msgid="807985499898802296">"Büyütme açıldığında ekranınızda yakınlaştırma yapabilirsiniz.\n\n"<b>"Yakınlaştırmak için"</b>", büyütmeyi başlatın, ardından ekranda herhangi bir yere dokunun.\n"<ul><li>"Kaydırmak için 2 veya daha fazla parmağınızı sürükleyin"</li>\n<li>"Yakınlaştırmayı ayarlamak için 2 veya daha fazla parmağınızı birbirine yaklaştırın"</li></ul>\n\n<b>"Geçici olarak yakınlaştırmak için"</b>", büyütmeyi başlatın, ardından ekranda herhangi bir yere dokunup basılı tutun.\n"<ul><li>"Ekranda hareket etmek için sürükleyin"</li>\n<li>"Uzaklaştırmak için parmağınızı çekin"</li></ul>\n\n"Klavyede veya gezinme çubuğundayken yakınlaştırma yapamazsınız."</string>
+    <string name="accessibility_tutorial_pager" msgid="8461939455728454061">"Sayfa <xliff:g id="CURRENT_PAGE">%1$d</xliff:g>/<xliff:g id="NUM_PAGES">%2$d</xliff:g>"</string>
     <string name="accessibility_tutorial_dialog_title_button" msgid="4681164949716215131">"Açmak için erişilebilirlik düğmesini kullanın"</string>
     <string name="accessibility_tutorial_dialog_title_volume" msgid="494810949830845234">"Açmak için ses düğmelerini basılı tutun"</string>
     <string name="accessibility_tutorial_dialog_title_triple" msgid="7089562919284464400">"Açmak için ekrana üç kez dokunun"</string>
@@ -2201,7 +2204,7 @@
     <string name="accessibility_ring_vibration_title" msgid="4689811297654320885">"Zili çaldırma titreşimi"</string>
     <string name="accessibility_touch_vibration_title" msgid="533931451319110741">"Dokunma geri bildirimi"</string>
     <string name="accessibility_service_master_switch_title" msgid="3001666897585097640">"<xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> uygulamasını kullan"</string>
-    <string name="accessibility_service_master_open_title" msgid="7437956750557583681">"Aç: <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>"</string>
+    <string name="accessibility_service_master_open_title" msgid="7437956750557583681">"<xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> uygulamasını aç"</string>
     <string name="accessibility_daltonizer_master_switch_title" msgid="3580563017377754890">"Renk düzeltme işlevini kullan"</string>
     <string name="accessibility_caption_master_switch_title" msgid="3821125170899547375">"Altyazıları göster"</string>
     <string name="accessibility_caption_master_switch_summary" msgid="4908774362453838764">"Yalnızca desteklenen uygulamalar için"</string>
@@ -2870,10 +2873,10 @@
     <string name="data_usage_metered_body" msgid="1206840367501998582">"Arka plan verileri kısıtlandığında, sınırlı ağlara mobil ağ gibi davranılır. Bu ağlar kullanılarak yapılacak büyük hacimli indirme işlemlerinden önce uygulamalar uyarı görüntüleyebilir."</string>
     <string name="data_usage_metered_mobile" msgid="3514227339274396401">"Mobil ağlar"</string>
     <string name="data_usage_metered_wifi" msgid="4807465959110473407">"Sınırlı Kablosuz ağlar"</string>
-    <string name="data_usage_metered_wifi_disabled" msgid="4664158157415362613">"Sınırlı ağları seçmek için Kablosuz bağlantıyı açın."</string>
+    <string name="data_usage_metered_wifi_disabled" msgid="4664158157415362613">"Sayaçlı ağları seçmek için Kablosuz bağlantıyı açın."</string>
     <string name="data_usage_metered_auto" msgid="1560514082131687116">"Otomatik"</string>
     <string name="wifi_metered_title" msgid="6623732965268033931">"Ağ kullanımı"</string>
-    <string name="data_usage_metered_yes" msgid="4262598072030135223">"Sınırlı"</string>
+    <string name="data_usage_metered_yes" msgid="4262598072030135223">"Sayaçlı"</string>
     <string name="data_usage_metered_no" msgid="1685828958417926268">"Sınırsız"</string>
     <string name="data_usage_disclaimer" msgid="3271450299386176770">"Operatörünüzün veri hesaplaması, cihazınızınkinden farklı olabilir."</string>
     <string name="cryptkeeper_emergency_call" msgid="8369322820475703306">"Acil durum çağrısı"</string>
@@ -3499,10 +3502,10 @@
     <string name="lockscreen_bypass_summary" msgid="6688592486830491144">"Yüz tanıma kilidinden sonra, doğrudan son kullanılan ekrana git"</string>
     <string name="keywords_lockscreen_bypass" msgid="41035425468915498">"Kilit ekranı, Kilitekranı, Atla, Geç"</string>
     <string name="locked_work_profile_notification_title" msgid="279367321791301499">"İş profili kilitli olduğunda"</string>
-    <string name="lock_screen_notifs_title" msgid="4936392753621150992">"Kilit ekranındaki bildirimler"</string>
-    <string name="lock_screen_notifs_show_all" msgid="4558869576369331619">"Sesli ve sessiz bildirimleri göster"</string>
-    <string name="lock_screen_notifs_show_alerting" msgid="6209541068503094236">"Yalnızca sesli bildirimleri göster"</string>
-    <string name="lock_screen_notifs_show_none" msgid="1324270762051331273">"Bildirimleri gösterme"</string>
+    <string name="lock_screen_notifs_title" msgid="3412042692317304449">"Kilit ekranındaki bildirimler"</string>
+    <string name="lock_screen_notifs_show_all" msgid="1300418674456749664">"Varsayılan ve sessiz görüşmeleri göster"</string>
+    <string name="lock_screen_notifs_show_alerting" msgid="6584682657382684566">"Sesiz görüşmeleri ve bildirimleri gizle"</string>
+    <string name="lock_screen_notifs_show_none" msgid="1941044980403067101">"Hiçbir bildirimi gösterme"</string>
     <string name="lock_screen_notifs_redact" msgid="9024158855454642296">"Hassas bildirimler"</string>
     <string name="lock_screen_notifs_redact_summary" msgid="1395483766035470612">"Ekran kilitliyken hassas içeriği göster"</string>
     <string name="lock_screen_notifs_redact_work" msgid="3833920196569208430">"Hassas iş profili bildirimleri"</string>
@@ -3525,15 +3528,22 @@
     <string name="notification_importance_blocked" msgid="4933285639639899394">"Bildirimleri hiçbir zaman gösterme"</string>
     <string name="conversations_category_title" msgid="5586541340846847798">"Görüşmeler"</string>
     <string name="conversation_category_title" msgid="6777135786004214149">"Görüşme"</string>
+    <string name="conversation_section_switch_title" msgid="3332885377659473775">"Görüşme bölümü"</string>
+    <string name="conversation_section_switch_summary" msgid="6123587625929439674">"Uygulamaya, görüşme bölümünü kullanma izni verin"</string>
     <string name="demote_conversation_title" msgid="6355383023376508485">"Bir görüşme değil"</string>
     <string name="demote_conversation_summary" msgid="4319929331165604112">"Görüşme bölümünden kaldırın"</string>
     <string name="promote_conversation_title" msgid="4731148769888238722">"Bu bir görüşme"</string>
     <string name="promote_conversation_summary" msgid="3890724115743515035">"Görüşme bölümüne ekleyin"</string>
     <string name="manage_conversations" msgid="4440289604887824337">"Görüşmeleri yönetme"</string>
+    <string name="priority_conversation_count_zero" msgid="3862289535537564713">"Öncelikli görüşme yok"</string>
+    <plurals name="priority_conversation_count" formatted="false" msgid="4229447176780862649">
+      <item quantity="other"><xliff:g id="COUNT_1">%d</xliff:g> öncelikli görüşme</item>
+      <item quantity="one"><xliff:g id="COUNT_0">%d</xliff:g> öncelikli görüşme</item>
+    </plurals>
     <string name="important_conversations" msgid="1233893707189659401">"Öncelikli görüşmeler"</string>
     <string name="important_conversations_summary_bubbles" msgid="614327166808117644">"Görüşme bölümünün üstünde gösterilir ve kayan baloncuklar olarak görünür"</string>
     <string name="important_conversations_summary" msgid="3184022761562676418">"Görüşme bölümünün üstünde gösterilir"</string>
-    <string name="other_conversations" msgid="8666033204953175307">"Değiştirilen görüşmeler"</string>
+    <string name="other_conversations" msgid="7218658664423361043">"Diğer görüşmeler"</string>
     <string name="other_conversations_summary" msgid="3487426787901236273">"Değişiklik yaptığınız görüşmeler"</string>
     <string name="important_bubble" msgid="7911698275408390846">"Öncelikli görüşmeleri balon olarak göster"</string>
     <string name="important_conversation_behavior_summary" msgid="1845064084071107732">"Öncelikli görüşmeler aşağı indirilen gölgenin üst kısmında gösterilir. Bunları ayrıca baloncuk olarak gösterilecek ve Rahatsız Etmeyin özelliğini dikkate almayacak şekilde ayarlayabilirsiniz."</string>
@@ -3550,15 +3560,16 @@
     <string name="notification_importance_high_title" msgid="394129291760607808">"Ekranda pop-up pencerede göster"</string>
     <string name="notification_block_title" msgid="7392909527700971673">"Engelle"</string>
     <string name="notification_silence_title" msgid="4085829874452944989">"Sessiz"</string>
-    <string name="notification_alert_title" msgid="5605374030042727533">"Uyarı"</string>
+    <string name="notification_alert_title" msgid="1632401211722199217">"Varsayılan"</string>
     <string name="allow_interruption" msgid="5237201780159482716">"Kesintilere izin ver"</string>
     <string name="allow_interruption_summary" msgid="9044131663518112543">"Uygulamanın ses çıkarmasına, titreşim yapmasına ve/veya ekranda bildirimler göstermesine izin verin"</string>
     <string name="notification_priority_title" msgid="5554834239080425229">"Öncelik"</string>
-    <string name="notification_channel_summary_priority" msgid="7096292835591575858">"Görüşme bölümünün üstünde baloncuk olarak gösterilir."</string>
-    <string name="convo_not_supported_summary" msgid="1794355603342685230">"<xliff:g id="APP_NAME">%1$s</xliff:g>, görüşmeye özgü ayarları desteklemiyor."</string>
+    <string name="notification_channel_summary_priority" msgid="7225362351439076913">"Görüşme bölümünün üstünde gösterilir, kayan baloncuk olarak görünür, kilit ekranında profil resmini görüntüler"</string>
+    <string name="convo_not_supported_summary" msgid="4285471045268268048">"<xliff:g id="APP_NAME">%1$s</xliff:g>, çoğu görüşme özelliğini desteklemez. Görüşmeleri öncelikli olarak ayarlayamazsınız ve görüşmeler kayan baloncuk olarak görünmez."</string>
     <string name="notification_channel_summary_min" msgid="8823399508450176842">"Aşağı açılır gölgede, bildirimleri tek satır olacak şekilde daraltın"</string>
-    <string name="notification_channel_summary_low" msgid="4842529455460294865">"Ses veya titreşim olmadan odaklanmanıza yardımcı olur"</string>
-    <string name="notification_channel_summary_default" msgid="2919219975379032181">"Ses veya titreşimle dikkatinizi çeker."</string>
+    <string name="notification_channel_summary_low" msgid="5549662596677692000">"Sessiz veya titreşim yok"</string>
+    <string name="notification_conversation_summary_low" msgid="6352818857388412326">"Sessizdir veya titreşim yoktur ve görüşme bölümünün altında görünür"</string>
+    <string name="notification_channel_summary_default" msgid="3674057458265438896">"Telefon ayarlarına bağlı olarak zili çalabilir veya titreyebilir"</string>
     <string name="notification_channel_summary_low_status" msgid="7866565328564018007">"Öncelikli bildirimlerin altında gösterilir. Her zaman sessiz."</string>
     <string name="notification_channel_summary_low_lock" msgid="4009247523075328235">"Öncelikli bildirimlerin altında gösterilir. Her zaman sessiz."</string>
     <string name="notification_channel_summary_low_status_lock" msgid="3668028634045057230">"Öncelikli bildirimlerin altında gösterilir. Her zaman sessiz."</string>
@@ -3673,7 +3684,7 @@
     <string name="notification_show_lights_title" msgid="5564315979007438583">"Işığı yakıp söndür"</string>
     <string name="notification_vibrate_title" msgid="1422330728336623351">"Titreşim"</string>
     <string name="notification_channel_sound_title" msgid="9018031231387273476">"Ses"</string>
-    <string name="notification_conversation_important" msgid="3502749563429704283">"Önemli"</string>
+    <string name="notification_conversation_important" msgid="4365437037763608045">"Öncelik"</string>
     <string name="notification_conversation_add_to_home" msgid="8136269431130231389">"Eve ekle"</string>
     <string name="zen_mode_rule_delete_button" msgid="7642063606919058862">"Sil"</string>
     <string name="zen_mode_rule_rename_button" msgid="4158377587795511144">"Yeniden adlandır"</string>

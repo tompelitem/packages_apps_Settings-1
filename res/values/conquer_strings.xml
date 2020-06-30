@@ -16,6 +16,7 @@
 
     <!-- ConquerOS Version -->
     <string name="conqueros_version_title">ConquerOS version</string>
+    <string name="conqueros_version_summary">Show more info about ConquerOS</string>
     <string name="conqueros_version_default">Unknown</string>
     <string name="conqueros_build_number_title">ConquerOS build number</string>
     <string name="conqueros_build_number_default">Unknown</string>

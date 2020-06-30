@@ -26,10 +26,9 @@
     <Preference
         settings:key="conqueros_version"
         settings:title="@string/conqueros_version_title"
-        settings:summary="@string/summary_placeholder"
-		settings:icon="@drawable/ic_homepage_system_dashboard"
-        settings:fragment="com.android.settings.deviceinfo.conqueros.ConquerOSVersionSettings"
-        settings:controller="com.android.settings.deviceinfo.conqueros.ConquerOSVersionPreferenceController"/>
+        settings:summary="@string/conqueros_version_summary"
+        settings:icon="@drawable/ic_homepage_system_dashboard"
+        settings:fragment="com.android.settings.deviceinfo.conqueros.ConquerOSVersionSettings"/>
 
     <!-- Android version -->
     <Preference

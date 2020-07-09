@@ -96,7 +96,8 @@
         android:key="vibrate_for_calls"
         android:title="@string/vibrate_when_ringing_title"
         android:order="-130"
-        settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"/>
+        settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
+        settings:keywords="@string/keywords_vibrate_for_calls"/>
 
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
@@ -108,6 +109,14 @@
         settings:keywords="@string/keywords_sounds_and_notifications_interruptions"
         settings:allowDividerAbove="true"
         settings:controller="com.android.settings.notification.zen.ZenModePreferenceController"/>
+
+    <Preference
+        android:key="media_controls_summary"
+        android:title="@string/media_controls_title"
+        android:fragment="com.android.settings.sound.MediaControlsSettings"
+        android:order="-110"
+        settings:controller="com.android.settings.sound.MediaControlsParentPreferenceController"
+        settings:keywords="@string/keywords_media_controls"/>
 
     <Preference
         android:key="gesture_prevent_ringing_sound"

@@ -751,6 +751,7 @@
     <string name="bluetooth_max_connected_audio_devices_string" msgid="3114156958598821615">"Máximo de dispositivos de audio conectados por Bluetooth"</string>
     <string name="bluetooth_max_connected_audio_devices_dialog_title" msgid="4056811727247312473">"Selecciona el número máximo de dispositivos de audio conectados por Bluetooth"</string>
     <string name="wifi_display_settings_title" msgid="6451625615274960175">"Enviar pantalla"</string>
+    <string name="keywords_wifi_display_settings" msgid="5753883229564422679">"proyectar"</string>
     <string name="wifi_display_enable_menu_item" msgid="7391841780777318134">"Habilitar pantalla inalámbrica"</string>
     <string name="wifi_display_no_devices_found" msgid="7904877793677102805">"No hay dispositivos cercanos."</string>
     <string name="wifi_display_status_connecting" msgid="530880182560077334">"Conectando"</string>
@@ -784,7 +785,7 @@
     <string name="nfc_disclaimer_title" msgid="3696580694485048039">"Activar NFC"</string>
     <string name="nfc_disclaimer_content" msgid="8256675597551036207">"La tecnología NFC permite intercambiar datos entre este dispositivo y otros dispositivos u objetivos cercanos, como terminales de pago, lectores de acceso y etiquetas o anuncios interactivos."</string>
     <string name="nfc_secure_settings_title" msgid="4906958426927741485">"Usar NFC solo si el dispositivo está desbloqueado"</string>
-    <string name="nfc_secure_toggle_summary" product="default" msgid="4591286109299690373">"Permite usar NFC en pagos y transporte público solo con la pantalla desbloqueada"</string>
+    <string name="nfc_secure_toggle_summary" product="default" msgid="4591286109299690373">"Permite usar pagos y transporte público por NFC solo con la pantalla desbloqueada"</string>
     <string name="android_beam_settings_title" msgid="2797963824490671295">"Android Beam"</string>
     <string name="android_beam_on_summary" msgid="6067720758437490896">"Listo para compartir contenido de aplicaciones por NFC"</string>
     <string name="android_beam_off_summary" msgid="5693961375631325042">"Desactivado"</string>
@@ -1189,6 +1190,8 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Pantalla fluida"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Aumenta automáticamente la frecuencia de actualización de 60 a 90 Hz en determinados tipos de contenido, lo que gasta más batería."</string>
+    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Pantalla fluida"</string>
+    <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Se utiliza la mayor frecuencia de actualización posible para mejorar la capacidad de respuesta a toques y la calidad de las animaciones. Aumenta el uso de batería."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Atención a la pantalla"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Activado / La pantalla no se apagará si estás mirándola"</string>
     <string name="adaptive_sleep_summary_off" msgid="5272156339202897523">"Desactivado"</string>
@@ -1435,6 +1438,7 @@
     <string name="storage_menu_explore" msgid="3048031115521594488">"Explorar"</string>
     <string name="storage_menu_free" msgid="616100170298501673">"Liberar espacio"</string>
     <string name="storage_menu_manage" msgid="7465522758801346408">"Gestionar almacenamiento"</string>
+    <string name="keywords_storage_menu_free" msgid="2275406357317597106">"liberar, almacenamiento, espacio"</string>
     <string name="storage_title_usb" msgid="1332488715547400452">"Conexión USB a ordenador"</string>
     <string name="usb_connection_category" msgid="2288543238378907242">"Conectar como"</string>
     <string name="usb_mtp_title" msgid="9068009584556422314">"Dispositivo multimedia (MTP)"</string>
@@ -1544,7 +1548,7 @@
     <string name="battery_level_title" msgid="1371765298786083448">"Nivel de batería"</string>
     <string name="apn_settings" msgid="4295467389400441299">"APNs"</string>
     <string name="apn_edit" msgid="2003683641840248741">"Editar punto de acceso"</string>
-    <string name="apn_not_set" msgid="8246646433109750293">"Sin establecer"</string>
+    <string name="apn_not_set" msgid="8246646433109750293">"Sin definir"</string>
     <string name="apn_name" msgid="6677695784108157953">"Nombre"</string>
     <string name="apn_apn" msgid="5812828833797458602">"APN"</string>
     <string name="apn_http_proxy" msgid="1052464912365838007">"Proxy"</string>
@@ -1642,15 +1646,15 @@
     <string name="tether_settings_summary_ethernet_tethering_only" msgid="3582266687537419309">"Solo Ethernet"</string>
     <string name="tether_settings_summary_hotspot_and_usb" msgid="5999349643653265016">"Punto de acceso, USB"</string>
     <string name="tether_settings_summary_hotspot_and_bluetooth" msgid="810514646401708557">"Punto de acceso, Bluetooth"</string>
-    <string name="tether_settings_summary_hotspot_and_ethernet" msgid="5489192670354277152">"Punto de acceso y Ethernet"</string>
+    <string name="tether_settings_summary_hotspot_and_ethernet" msgid="5489192670354277152">"Punto de acceso, Ethernet"</string>
     <string name="tether_settings_summary_usb_and_bluetooth" msgid="1355680331767261967">"USB y Bluetooth"</string>
     <string name="tether_settings_summary_usb_and_ethernet" msgid="2195017679820919905">"USB y Ethernet"</string>
     <string name="tether_settings_summary_bluetooth_and_ethernet" msgid="1015253926959211012">"Bluetooth y Ethernet"</string>
     <string name="tether_settings_summary_hotspot_and_usb_and_bluetooth" msgid="2949043525073791732">"Punto de acceso, USB, Bluetooth"</string>
-    <string name="tether_settings_summary_hotspot_and_usb_and_ethernet" msgid="5178946567323581144">"Punto de acceso, USB y Ethernet"</string>
-    <string name="tether_settings_summary_hotspot_and_bluetooth_and_ethernet" msgid="4104425838594994441">"Punto de acceso, Bluetooth y Ethernet"</string>
+    <string name="tether_settings_summary_hotspot_and_usb_and_ethernet" msgid="5178946567323581144">"Punto de acceso, USB, Ethernet"</string>
+    <string name="tether_settings_summary_hotspot_and_bluetooth_and_ethernet" msgid="4104425838594994441">"Punto de acceso, Bluetooth, Ethernet"</string>
     <string name="tether_settings_summary_usb_and_bluetooth_and_ethernet" msgid="5880591133984166550">"USB, Bluetooth y Ethernet"</string>
-    <string name="tether_settings_summary_all" msgid="7565193614882005775">"Punto de acceso, USB, Bluetooth y Ethernet"</string>
+    <string name="tether_settings_summary_all" msgid="7565193614882005775">"Punto de acceso, USB, Bluetooth, Ethernet"</string>
     <string name="tether_settings_summary_off" msgid="2526164899130351968">"No se está compartiendo Internet con otros dispositivos"</string>
     <string name="tethering_interface_options" msgid="7575535888135143650">"Compartir conexión"</string>
     <string name="disable_wifi_hotspot_title" msgid="2167985468585290478">"No usar el punto de acceso Wi‑Fi"</string>
@@ -1846,7 +1850,10 @@
     <string name="install_applications" msgid="3921609656584369901">"Fuentes desconocidas"</string>
     <string name="install_applications_title" msgid="7890233747559108106">"Permitir todas las fuentes"</string>
     <string name="recent_app_category_title" msgid="189758417804427533">"Aplicaciones abiertas recientemente"</string>
-    <string name="see_all_apps_title" msgid="8363320482315507386">"Ver todas las aplicaciones (<xliff:g id="COUNT">%1$d</xliff:g>)"</string>
+    <plurals name="see_all_apps_title" formatted="false" msgid="6864581406735745400">
+      <item quantity="other">Ver las %1$d aplicaciones</item>
+      <item quantity="one">Ver todas las aplicaciones</item>
+    </plurals>
     <string name="forgot_password_title" msgid="3967873480875239885">"Contacta con tu administrador de TI"</string>
     <string name="forgot_password_text" msgid="2583194470767613163">"Te podrá ayudar a cambiar el PIN, el patrón o la contraseña"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Tu tablet y tus datos personales son más vulnerables a los ataques de aplicaciones desconocidas. Al instalar aplicaciones de esta fuente, aceptas ser responsable de cualquier daño que sufra tu tablet o la pérdida de datos que se pueda derivar de su uso."</string>
@@ -2021,6 +2028,7 @@
     <string name="spellchecker_language" msgid="8905487366580285282">"Idioma"</string>
     <string name="keyboard_and_input_methods_category" msgid="5296847777802891649">"Teclados"</string>
     <string name="virtual_keyboard_category" msgid="2339505603075527212">"Teclado en pantalla"</string>
+    <string name="keywords_virtual_keyboard" msgid="1494726424879503434">"Gboard"</string>
     <string name="available_virtual_keyboard_category" msgid="6930012948152749337">"Teclado en pantalla disponible"</string>
     <string name="add_virtual_keyboard" msgid="2515850206289352606">"Gestionar teclados en pantalla"</string>
     <string name="keyboard_assistance_category" msgid="7320599809770932032">"Ayuda del teclado"</string>
@@ -2095,7 +2103,7 @@
     <string name="accessibility_settings_summary" msgid="2195085206729325737">"Lectores de pantalla, pantalla, controles de interacción"</string>
     <string name="vision_settings_title" msgid="8919983801864103069">"Ajustes de visión"</string>
     <string name="vision_settings_description" msgid="7614894785054441991">"Personaliza este dispositivo para adaptarlo a tus necesidades. Puedes modificar las funciones de accesibilidad más tarde en Ajustes."</string>
-    <string name="vision_settings_suggestion_title" msgid="4689275412658803919">"Cambia el tamaño de la fuente"</string>
+    <string name="vision_settings_suggestion_title" msgid="4689275412658803919">"Cambiar el tamaño de la fuente"</string>
     <string name="screen_reader_category_title" msgid="6195867428854871553">"Lectores de pantalla"</string>
     <string name="audio_and_captions_category_title" msgid="5049122378290004050">"Audio y texto en pantalla"</string>
     <string name="display_category_title" msgid="6638191682294461408">"Pantalla"</string>
@@ -2145,7 +2153,7 @@
     <string name="accessibility_shortcut_edit_summary_software" msgid="6405629977940618205">"Botón Accesibilidad"</string>
     <string name="accessibility_shortcut_edit_dialog_title_software_gesture" msgid="8078659880723370597">"Deslizar hacia arriba con dos dedos"</string>
     <string name="accessibility_shortcut_edit_dialog_title_software_gesture_talkback" msgid="7422753388389160524">"Desliza tres dedos hacia arriba"</string>
-    <string name="accessibility_shortcut_edit_dialog_title_software" msgid="4796192466943479849">"Toca el botón Accesibilidad"</string>
+    <string name="accessibility_shortcut_edit_dialog_title_software" msgid="4796192466943479849">"Tocar el botón Accesibilidad"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_software" msgid="5606196352833449600">"En la parte inferior de la pantalla, toca el botón Accesibilidad <xliff:g id="ACCESSIBILITY_ICON">%s</xliff:g>.\n\nPara cambiar de una función a otra, mantén pulsado este botón."</string>
     <string name="accessibility_shortcut_edit_dialog_summary_software_gesture" msgid="8292555254353761635">"Desde la parte inferior de la pantalla, desliza hacia arriba con dos dedos.\n\nPara cambiar de una función a otra, desliza hacia arriba con dos dedos y mantén pulsada la pantalla."</string>
     <string name="accessibility_shortcut_edit_dialog_summary_software_gesture_talkback" msgid="84483464524360845">"Desde la parte inferior de la pantalla, desliza tres dedos hacia arriba.\n\nPara cambiar de una función a otra, desliza tres dedos hacia arriba y mantén pulsada la pantalla."</string>
@@ -3078,7 +3086,7 @@
     <string name="call_manager_title" msgid="3397433159509629466">"Administrador de llamadas"</string>
     <!-- no translation found for call_manager_summary (2558839230880919191) -->
     <skip />
-    <string name="cell_broadcast_settings" msgid="6414938308090183446">"Alertas de emergencias"</string>
+    <string name="cell_broadcast_settings" msgid="2416980110093867199">"Alertas de emergencia inalámbricas"</string>
     <string name="network_operators_settings" msgid="5105453353329748954">"Operadores de red"</string>
     <string name="access_point_names" msgid="5768430498022188057">"Nombres de punto de acceso"</string>
     <string name="enhanced_4g_lte_mode_title" msgid="6624700245232361149">"VoLTE"</string>
@@ -3179,10 +3187,10 @@
     <string name="connected_devices_dashboard_no_nfc_summary" msgid="8424794257586524040">"Bluetooth, modo de conducción"</string>
     <string name="connected_devices_dashboard_no_driving_mode_summary" msgid="7155882619333726331">"Bluetooth, NFC"</string>
     <string name="connected_devices_dashboard_no_driving_mode_no_nfc_summary" msgid="1175254057213044560">"Bluetooth"</string>
-    <string name="connected_devices_dashboard_android_auto_summary" msgid="8179090809275818804">"Bluetooth, Android Auto, modo de conducción y NFC"</string>
-    <string name="connected_devices_dashboard_android_auto_no_nfc_summary" msgid="2532811870469405527">"Bluetooth, Android Auto y modo de conducción"</string>
-    <string name="connected_devices_dashboard_android_auto_no_driving_mode_summary" msgid="6426996842202276640">"Bluetooth, Android Auto y NFC"</string>
-    <string name="connected_devices_dashboard_android_auto_no_nfc_no_driving_mode" msgid="1672426693308438634">"Bluetooth y Android Auto"</string>
+    <string name="connected_devices_dashboard_android_auto_summary" msgid="8179090809275818804">"Bluetooth, Android Auto, modo de conducción, NFC"</string>
+    <string name="connected_devices_dashboard_android_auto_no_nfc_summary" msgid="2532811870469405527">"Bluetooth, Android Auto, modo de conducción"</string>
+    <string name="connected_devices_dashboard_android_auto_no_driving_mode_summary" msgid="6426996842202276640">"Bluetooth, Android Auto, NFC"</string>
+    <string name="connected_devices_dashboard_android_auto_no_nfc_no_driving_mode" msgid="1672426693308438634">"Bluetooth, Android Auto"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"No está disponible porque la NFC está desactivada"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"Para usar esta opción, primero tienes que instalar una aplicación de pagos"</string>
     <string name="app_and_notification_dashboard_title" msgid="2861781687031832943">"Aplicaciones y notificaciones"</string>
@@ -3289,14 +3297,15 @@
     <string name="remote_media_volume_option_title" msgid="8760846743943305764">"Volumen de envío"</string>
     <string name="call_volume_option_title" msgid="1461105986437268924">"Volumen de llamada"</string>
     <string name="alarm_volume_option_title" msgid="6398641749273697140">"Volumen de alarma"</string>
-    <string name="ring_volume_option_title" msgid="1520802026403038560">"Volumen de tono y notificación"</string>
+    <string name="ring_volume_option_title" msgid="1520802026403038560">"Volumen de tonos y notificaciones"</string>
     <string name="notification_volume_option_title" msgid="4838818791683615978">"Volumen de notificaciones"</string>
-    <string name="ringtone_title" msgid="3271453110387368088">"Tono del teléfono"</string>
+    <string name="ringtone_title" msgid="3271453110387368088">"Tono de llamada del teléfono"</string>
     <string name="notification_ringtone_title" msgid="6924501621312095512">"Sonido de notificación predeterminado"</string>
     <string name="notification_unknown_sound_title" msgid="1319708450698738980">"Sonido proporcionado de app"</string>
     <string name="notification_sound_default" msgid="8630353701915294299">"Sonido de notificación predeterminado"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"Sonido de alarma predeterminado"</string>
     <string name="vibrate_when_ringing_title" msgid="3436203665622843196">"Vibrar en llamadas"</string>
+    <string name="keywords_vibrate_for_calls" msgid="1019870409730074899">"Vibración"</string>
     <string name="vibrate_when_ringing_option_never_vibrate" msgid="6518980907289156517">"No vibrar nunca"</string>
     <string name="vibrate_when_ringing_option_always_vibrate" msgid="968652667232075466">"Vibrar siempre"</string>
     <string name="vibrate_when_ringing_option_ramping_ringer" msgid="2798848945803840348">"Vibrar primero y sonar cada vez más alto"</string>
@@ -3482,7 +3491,9 @@
     <string name="bubble_app_setting_selected" msgid="4324386074198040675">"Las conversaciones elegidas pueden mostrarse en burbujas"</string>
     <string name="bubble_app_setting_none" msgid="8643594711863996418">"No crear burbujas"</string>
     <string name="bubble_app_setting_selected_conversation_title" msgid="3060958976857529933">"Conversaciones"</string>
-    <string name="bubble_app_setting_excluded_conversation_title" msgid="324818960338773945">"Todas las conversaciones pueden aparecer como burbujas salvo"</string>
+    <string name="bubble_app_setting_excluded_conversation_title" msgid="324818960338773945">"Todas las conversaciones pueden aparecer como burbujas excepto"</string>
+    <string name="bubble_app_setting_unbubble_conversation" msgid="1769789500566080427">"Desactivar las burbujas de esta conversación"</string>
+    <string name="bubble_app_setting_bubble_conversation" msgid="1461981680982964285">"Activar las burbujas de esta conversación"</string>
     <string name="swipe_direction_title" msgid="4260320464727178413">"Acciones al deslizar el dedo"</string>
     <string name="swipe_direction_ltr" msgid="5137180130142633085">"Desliza el dedo a la derecha para ignorar la notificación y a la izquierda para mostrar el menú"</string>
     <string name="swipe_direction_rtl" msgid="1707391213940663992">"Desliza el dedo a la izquierda para ignorar la notificación y a la derecha para mostrar el menú"</string>
@@ -3504,7 +3515,7 @@
     <string name="locked_work_profile_notification_title" msgid="279367321791301499">"Perfil de trabajo bloqueado"</string>
     <string name="lock_screen_notifs_title" msgid="3412042692317304449">"Notificaciones en la pantalla de bloqueo"</string>
     <string name="lock_screen_notifs_show_all" msgid="1300418674456749664">"Mostrar conversaciones predeterminadas y silenciosas"</string>
-    <string name="lock_screen_notifs_show_alerting" msgid="6584682657382684566">"Ocultar conversaciones y notificaciones silenciadas"</string>
+    <string name="lock_screen_notifs_show_alerting" msgid="6584682657382684566">"Ocultar conversaciones y notificaciones silenciosas"</string>
     <string name="lock_screen_notifs_show_none" msgid="1941044980403067101">"No mostrar ninguna notificación"</string>
     <string name="lock_screen_notifs_redact" msgid="9024158855454642296">"Notificaciones sensibles"</string>
     <string name="lock_screen_notifs_redact_summary" msgid="1395483766035470612">"Mostrar contenido sensible en la pantalla de bloqueo"</string>
@@ -3560,16 +3571,16 @@
     <string name="notification_importance_high_title" msgid="394129291760607808">"Mostrar en pantalla"</string>
     <string name="notification_block_title" msgid="7392909527700971673">"Bloquear"</string>
     <string name="notification_silence_title" msgid="4085829874452944989">"Silencio"</string>
-    <string name="notification_alert_title" msgid="1632401211722199217">"Predeterminada"</string>
+    <string name="notification_alert_title" msgid="1632401211722199217">"Predeterminado"</string>
     <string name="allow_interruption" msgid="5237201780159482716">"Permitir interrupciones"</string>
     <string name="allow_interruption_summary" msgid="9044131663518112543">"Permite que la aplicación emita sonido, vibre o muestre notificaciones en la pantalla"</string>
     <string name="notification_priority_title" msgid="5554834239080425229">"Prioridad"</string>
-    <string name="notification_channel_summary_priority" msgid="7225362351439076913">"Se muestra en la parte superior de la sección de conversaciones en forma de burbuja flotante, y la imagen de perfil aparece en la pantalla de bloqueo"</string>
-    <string name="convo_not_supported_summary" msgid="4285471045268268048">"<xliff:g id="APP_NAME">%1$s</xliff:g> no admite la mayoría de las funciones de conversaciones. No puedes definir una conversación como prioritaria y las conversaciones no se mostrarán en forma de burbuja flotante."</string>
+    <string name="notification_channel_summary_priority" msgid="7225362351439076913">"Se muestra arriba en la sección de conversaciones en forma de burbuja flotante, y la imagen de perfil aparece en la pantalla de bloqueo"</string>
+    <string name="convo_not_supported_summary" msgid="4285471045268268048">"<xliff:g id="APP_NAME">%1$s</xliff:g> no admite la mayoría de las funciones de conversaciones. No puedes establecer una conversación como prioritaria, y las conversaciones no se mostrarán en forma de burbuja flotante."</string>
     <string name="notification_channel_summary_min" msgid="8823399508450176842">"En la pantalla desplegable, mostrar las notificaciones en una sola línea"</string>
     <string name="notification_channel_summary_low" msgid="5549662596677692000">"Sin sonido ni vibración"</string>
     <string name="notification_conversation_summary_low" msgid="6352818857388412326">"Sin sonido ni vibración y se muestra más abajo en la sección de conversaciones"</string>
-    <string name="notification_channel_summary_default" msgid="3674057458265438896">"Según los ajustes definidos en el teléfono, es posible que suene o vibre"</string>
+    <string name="notification_channel_summary_default" msgid="3674057458265438896">"Es posible que suene o vibre según los ajustes del teléfono"</string>
     <string name="notification_channel_summary_high" msgid="3411637309360617621">"Cuando el dispositivo está desbloqueado, muestra las notificaciones en la parte superior"</string>
     <string name="notification_channel_summary_low_status" msgid="7866565328564018007">"Muestra las notificaciones con prioridad baja. Siempre en silencio."</string>
     <string name="notification_channel_summary_low_lock" msgid="4009247523075328235">"Muestra las notificaciones con prioridad baja. Siempre en silencio."</string>
@@ -3626,10 +3637,11 @@
     <string name="interact_across_profiles_switch_enabled" msgid="7294719120282287495">"Conectados"</string>
     <string name="interact_across_profiles_switch_disabled" msgid="4312196170211463988">"Conectar estas aplicaciones"</string>
     <string name="interact_across_profiles_summary_1" msgid="6093976896137600231">"Las aplicaciones conectadas comparten permisos y pueden acceder a sus datos entre sí."</string>
-    <string name="interact_across_profiles_summary_2" msgid="505748305453633885">"Conecta solo aplicaciones si confías en que no compartirán datos personales con tu administrador de TI."</string>
+    <string name="interact_across_profiles_summary_2" msgid="505748305453633885">"Conecta aplicaciones solo si confías en que no compartirán datos personales con tu administrador de TI."</string>
+    <string name="interact_across_profiles_summary_3" msgid="444428694843299854">"Puedes desconectar aplicaciones cuando quieras en los ajustes de privacidad de tu dispositivo."</string>
     <string name="interact_across_profiles_consent_dialog_title" msgid="8530621211216508681">"¿Dar acceso a la aplicación de trabajo <xliff:g id="NAME">%1$s</xliff:g> a tus datos personales?"</string>
-    <string name="interact_across_profiles_consent_dialog_summary" msgid="3949870271562055048">"Conecta solo aplicaciones si confías en que no compartirán datos personales con tu administrador de TI."</string>
-    <string name="interact_across_profiles_consent_dialog_app_data_title" msgid="8436318876213958940">"Datos de aplicaciones"</string>
+    <string name="interact_across_profiles_consent_dialog_summary" msgid="3949870271562055048">"Conecta aplicaciones solo si confías en que no compartirán datos personales con tu administrador de TI."</string>
+    <string name="interact_across_profiles_consent_dialog_app_data_title" msgid="8436318876213958940">"Datos de la aplicación"</string>
     <string name="interact_across_profiles_consent_dialog_app_data_summary" msgid="6057019384328088311">"Esta aplicación puede acceder a los datos de tu aplicación personal <xliff:g id="NAME">%1$s</xliff:g>."</string>
     <string name="interact_across_profiles_consent_dialog_permissions_title" msgid="2316852600280487055">"Permisos"</string>
     <string name="interact_across_profiles_consent_dialog_permissions_summary" msgid="995051542847604039">"Esta aplicación puede utilizar los permisos de tu aplicación personal <xliff:g id="NAME">%1$s</xliff:g>, como el acceso a la ubicación, el almacenamiento o los contactos."</string>
@@ -3656,6 +3668,7 @@
     </plurals>
     <string name="no_channels" msgid="4716199078612071915">"Esta aplicación no ha publicado ninguna notificación"</string>
     <string name="app_settings_link" msgid="6725453466705333311">"Ajustes adicionales de la aplicación"</string>
+    <string name="notification_screen_summary" msgid="5984915275134654822">"Historial de notificaciones, burbujas, enviadas recientemente"</string>
     <string name="app_notification_listing_summary_zero" msgid="2988400013221120744">"Activadas para todas las aplicaciones"</string>
     <plurals name="app_notification_listing_summary_others" formatted="false" msgid="1506127395400503717">
       <item quantity="other">Desactivadas para <xliff:g id="COUNT_1">%d</xliff:g> aplicaciones</item>
@@ -3673,7 +3686,7 @@
     <string name="notification_content_block_summary" msgid="329171999992248925">"No mostrar nunca notificaciones en el panel de notificaciones ni en dispositivos periféricos"</string>
     <string name="notification_badge_title" msgid="6854537463548411313">"Permitir burbuja de notificación"</string>
     <string name="notification_channel_badge_title" msgid="6505542437385640049">"Mostrar burbuja de notificación"</string>
-    <string name="app_notification_override_dnd_title" msgid="3769539356442226691">"Omitir No molestar"</string>
+    <string name="app_notification_override_dnd_title" msgid="3769539356442226691">"Ignorar modo No molestar"</string>
     <string name="app_notification_override_dnd_summary" msgid="4894641191397562920">"Permitir notificaciones cuando el modo No molestar esté activado"</string>
     <string name="app_notification_visibility_override_title" msgid="7778628150022065920">"Pantalla de bloqueo"</string>
     <string name="app_notification_row_banned" msgid="4513523107019706924">"Bloqueada"</string>
@@ -3696,7 +3709,7 @@
     <string name="zen_mode_add_time_rule" msgid="2621320450155364432">"Añadir programación horaria"</string>
     <string name="zen_mode_delete_rule" msgid="5419296431989891130">"Eliminar programación"</string>
     <string name="zen_mode_choose_rule_type" msgid="7656308563653982975">"Elige un tipo de programación"</string>
-    <string name="zen_mode_delete_rule_confirmation" msgid="6195069346439736688">"¿Quieres eliminar la regla \"<xliff:g id="RULE">%1$s</xliff:g>\"?"</string>
+    <string name="zen_mode_delete_rule_confirmation" msgid="6195069346439736688">"¿Eliminar regla \"<xliff:g id="RULE">%1$s</xliff:g>\"?"</string>
     <string name="zen_mode_delete_rule_button" msgid="8328729110756882244">"Eliminar"</string>
     <string name="zen_mode_rule_type_unknown" msgid="7819162569994282316">"Desconocida"</string>
     <string name="zen_mode_app_set_behavior" msgid="4319517270279704677">"Estas opciones no se pueden modificar en este momento. Una aplicación (<xliff:g id="APP_NAME">%1$s</xliff:g>) ha activado automáticamente el modo No molestar con funcionamiento personalizado."</string>
@@ -3722,10 +3735,10 @@
     <string name="zen_mode_schedule_rule_days_none" msgid="5636604196262227070">"Ninguno"</string>
     <string name="zen_mode_schedule_rule_days_all" msgid="1583884351893245169">"Todos los días"</string>
     <string name="zen_mode_schedule_alarm_title" msgid="305237266064819345">"La alarma puede anular la hora de finalización"</string>
-    <string name="zen_mode_schedule_alarm_summary" msgid="9162760856136645133">"La programación se desactiva cuando suena una alarma"</string>
+    <string name="zen_mode_schedule_alarm_summary" msgid="9162760856136645133">"La programación se desactiva si suena una alarma"</string>
     <string name="zen_mode_custom_behavior_title" msgid="92525364576358085">"Comportamiento del modo No molestar"</string>
     <string name="zen_mode_custom_behavior_summary_default" msgid="3259312823717839148">"Usar configuración predeterminada"</string>
-    <string name="zen_mode_custom_behavior_summary" msgid="5390522750884328843">"Crear opciones de configuración personalizadas para esta programación"</string>
+    <string name="zen_mode_custom_behavior_summary" msgid="5390522750884328843">"Crear ajustes personalizados para esta programación"</string>
     <string name="zen_mode_custom_behavior_category_title" msgid="7815612569425733764">"En la programación \"<xliff:g id="SCHEDULE_NAME">%1$s</xliff:g>\""</string>
     <string name="summary_divider_text" msgid="8836285171484563986">", "</string>
     <string name="summary_range_symbol_combination" msgid="8447490077794415525">"<xliff:g id="START">%1$s</xliff:g>-<xliff:g id="END">%2$s</xliff:g>"</string>
@@ -3745,7 +3758,7 @@
     <string name="zen_mode_calls" msgid="7653245854493631095">"Llamadas"</string>
     <string name="zen_mode_calls_list" msgid="5044730950895749093">"llamadas"</string>
     <string name="zen_mode_calls_header" msgid="8379225445095856726">"Llamadas que pueden interrumpirte"</string>
-    <string name="zen_mode_calls_footer" msgid="2008079711083701243">"Para asegurarte de que las llamadas permitidas suenan, comprueba que el dispositivo tiene activado el sonido"</string>
+    <string name="zen_mode_calls_footer" msgid="2008079711083701243">"Para asegurarte de que las llamadas permitidas suenan, comprueba que el dispositivo está configurado para sonar"</string>
     <string name="zen_mode_custom_calls_footer" msgid="6521283204577441053">"Las llamadas entrantes se bloquean en la programación \"<xliff:g id="SCHEDULE_NAME">%1$s</xliff:g>\". Cambia los ajustes para que tus amigos, familiares u otros puedan contactar contigo."</string>
     <string name="zen_mode_starred_contacts_title" msgid="630299631659575589">"Contactos destacados"</string>
     <plurals name="zen_mode_starred_contacts_summary_additional_contacts" formatted="false" msgid="7001724653833724925">
@@ -3757,7 +3770,7 @@
     <string name="zen_mode_messages_list" msgid="5431014101342361882">"mensajes"</string>
     <string name="zen_mode_messages_title" msgid="1777598523485334405">"Mensajes"</string>
     <string name="zen_mode_messages_header" msgid="253721635061451577">"Mensajes que pueden interrumpirte"</string>
-    <string name="zen_mode_messages_footer" msgid="6002468050854126331">"Para asegurarte de que los mensajes permitidos suenan, comprueba que el dispositivo tiene activado el sonido"</string>
+    <string name="zen_mode_messages_footer" msgid="6002468050854126331">"Para asegurarte de que los mensajes permitidos suenan, comprueba que el dispositivo está configurado para sonar"</string>
     <string name="zen_mode_custom_messages_footer" msgid="7545180036949550830">"Los mensajes entrantes se bloquean en la programación \"<xliff:g id="SCHEDULE_NAME">%1$s</xliff:g>\". Cambia los ajustes para que tus amigos, familiares u otros puedan contactar contigo."</string>
     <string name="zen_mode_all_messages_summary" msgid="3756267858343104554">"Todos los mensajes pueden interrumpirte"</string>
     <string name="zen_mode_all_calls_summary" msgid="7337907849083824698">"Todas las llamadas pueden interrumpirte"</string>
@@ -3779,7 +3792,7 @@
     <string name="zen_mode_alarms_list" msgid="334782233067365405">"alarmas"</string>
     <string name="zen_mode_alarms_list_first" msgid="2780418316613576610">"Alarmas"</string>
     <string name="zen_mode_media" msgid="885017672250984735">"Sonidos multimedia"</string>
-    <string name="zen_mode_media_summary" msgid="7174081803853351461">"Sonidos de vídeos, de juegos y de otro tipo de contenido multimedia"</string>
+    <string name="zen_mode_media_summary" msgid="7174081803853351461">"Sonidos de vídeos, juegos y otro tipo de contenido multimedia"</string>
     <string name="zen_mode_media_list" msgid="2006413476596092020">"multimedia"</string>
     <string name="zen_mode_media_list_first" msgid="7824427062528618442">"Multimedia"</string>
     <string name="zen_mode_system" msgid="7301665021634204942">"Sonidos al tocar"</string>
@@ -3791,7 +3804,7 @@
     <string name="zen_mode_reminders_list" msgid="3133513621980999858">"recordatorios"</string>
     <string name="zen_mode_reminders_list_first" msgid="1130470396012190814">"Recordatorios"</string>
     <string name="zen_mode_events" msgid="7425795679353531794">"Eventos de calendario"</string>
-    <string name="zen_mode_events_summary" msgid="3241903481309766428">"De futuros eventos del calendario"</string>
+    <string name="zen_mode_events_summary" msgid="3241903481309766428">"De eventos futuros del calendario"</string>
     <string name="zen_mode_events_list" msgid="7191316245742097229">"eventos"</string>
     <string name="zen_mode_events_list_first" msgid="7425369082835214361">"Eventos"</string>
     <string name="zen_mode_bypassing_apps" msgid="625309443389126481">"Permitir que las aplicaciones anulen el modo No molestar"</string>
@@ -3802,13 +3815,13 @@
     <string name="zen_mode_bypassing_apps_add" msgid="5031919618521327102">"Añadir aplicaciones"</string>
     <string name="zen_mode_bypassing_apps_summary_all" msgid="4684544706511555744">"Todas las notificaciones"</string>
     <string name="zen_mode_bypassing_apps_summary_some" msgid="5315750826830358230">"Algunas notificaciones"</string>
-    <string name="zen_mode_bypassing_apps_footer" msgid="1454862989340760124">"Los usuarios seleccionados podrán ponerse en contacto contigo, aunque las aplicaciones no tengan permiso para interrumpirte"</string>
+    <string name="zen_mode_bypassing_apps_footer" msgid="1454862989340760124">"Las personas seleccionadas podrán ponerse en contacto contigo, incluso si no permites que las aplicaciones puedan interrumpirte"</string>
     <plurals name="zen_mode_bypassing_apps_subtext" formatted="false" msgid="7781990918323204156">
       <item quantity="other"><xliff:g id="APP_NAMES">%s</xliff:g> pueden interrumpirte</item>
       <item quantity="one"><xliff:g id="APP_NAME_0">%s</xliff:g> puede interrumpirte</item>
     </plurals>
     <string name="zen_mode_apps_bypassing_list_count" msgid="1581384924379825405">"<xliff:g id="NUMBER">%d</xliff:g> más"</string>
-    <string name="zen_mode_bypassing_apps_title" msgid="4142154650779609193">"Excepciones de aplicaciones"</string>
+    <string name="zen_mode_bypassing_apps_title" msgid="371050263563164059">"Aplicaciones"</string>
     <string name="zen_mode_bypassing_apps_all_summary" msgid="5197566190120503132">"Todas las notificaciones"</string>
     <string name="zen_mode_bypassing_apps_some_summary" msgid="1514572070650411509">"Algunas notificaciones"</string>
     <string name="zen_mode_bypassing_app_channels_header" msgid="4011017798712587373">"Notificaciones que pueden interrumpirte"</string>
@@ -3831,7 +3844,7 @@
     <!-- no translation found for zen_mode_calls_summary_one (1928015516061784276) -->
     <skip />
     <string name="zen_mode_calls_summary_two" msgid="6351563496898410742">"<xliff:g id="CALLER_TYPE_0">%1$s</xliff:g> y <xliff:g id="CALLER_TYPE_1">%2$s</xliff:g>"</string>
-    <string name="zen_mode_repeat_callers_summary" msgid="4121054819936083025">"Si es la segunda llamada de una persona y la primera fue hace menos de <xliff:g id="MINUTES">%d</xliff:g> minutos"</string>
+    <string name="zen_mode_repeat_callers_summary" msgid="4121054819936083025">"Si es la segunda llamada de una misma persona y la primera fue hace menos de <xliff:g id="MINUTES">%d</xliff:g> minutos"</string>
     <string name="zen_mode_behavior_summary_custom" msgid="3126805555852783860">"Personalizado"</string>
     <string name="zen_mode_when" msgid="5710214762051824755">"Activar automáticamente"</string>
     <string name="zen_mode_when_never" msgid="2537537280091840672">"Nunca"</string>
@@ -3864,9 +3877,9 @@
     <string name="switch_on_text" msgid="5664542327776075105">"Activado"</string>
     <string name="switch_off_text" msgid="1315547447393646667">"Desactivado"</string>
     <string name="screen_pinning_title" msgid="6927227272780208966">"Fijar aplicaciones"</string>
-    <string name="screen_pinning_description" msgid="6927147836599784578">"Al fijar una aplicación, se mantiene visible hasta que dejas de fijarla. Esta función se puede utilizar, por ejemplo, para dejar que alguien de confianza juegue a un juego específico. \n\nEs posible que una aplicación fijada puede abrir otras aplicaciones y que se pueda acceder a datos personales. \n\nPara fijar una aplicación, sigue estos pasos: 	\n1.	Activa la función de fijar aplicaciones. 	\n2.	Abre Aplicaciones recientes. 	\n3.	Toca el icono de la aplicación situado en la parte superior de la pantalla y, a continuación, toca Fijar."</string>
+    <string name="screen_pinning_description" msgid="6927147836599784578">"Al fijar una aplicación, se mantiene visible hasta que dejas de fijarla. Esta función se puede utilizar, por ejemplo, para dejar que alguien de confianza juegue a un juego específico. \n\nEs posible que una aplicación fijada pueda abrir otras aplicaciones y que se pueda acceder a datos personales. \n\nPara fijar una aplicación, sigue estos pasos: \n1. Activa la función de fijar aplicaciones. \n2. Abre Aplicaciones recientes. \n3. Toca el icono de la aplicación situado en la parte superior de la pantalla y, a continuación, toca Fijar."</string>
     <string name="screen_pinning_guest_user_description" msgid="4772752097527490014">"Al fijar una aplicación, se mantiene visible hasta que dejas de fijarla. Esta función se puede utilizar, por ejemplo, para dejar que alguien de confianza juegue a un juego específico. \n\nEs posible que una aplicación fijada puede abrir otras aplicaciones y que se pueda acceder a datos personales. \n\nSi quieres compartir tu dispositivo con alguien de forma segura, prueba a usar un usuario invitado. \n\nPara fijar una aplicación, sigue estos pasos: 	\n1.	Activa la función de fijar aplicaciones. 	\n2.	Abre Aplicaciones recientes. 	\n3.	Toca el icono de la aplicación situado en la parte superior de la pantalla y, a continuación, toca Fijar."</string>
-    <string name="screen_pinning_dialog_message" msgid="8144925258679476654">"Al fijar la aplicación: \n\n•		Es posible que se acceda a datos personales. \n		Entre estos datos se incluyen los contactos y el contenido de los correos. \n•		Es posible que las aplicaciones fijadas abran otras aplicaciones. \n\nUtiliza la función de fijar aplicaciones solo con personas de confianza."</string>
+    <string name="screen_pinning_dialog_message" msgid="8144925258679476654">"Al fijar una aplicación: \n\n• Es posible que se pueda acceder a datos personales (como contactos y contenido de correos). \n• Es posible que las aplicaciones fijadas abran otras aplicaciones. \n\n\nUsa la función de fijar aplicaciones solo con personas de confianza."</string>
     <string name="screen_pinning_unlock_pattern" msgid="1345877794180829153">"Solicitar patrón de desbloqueo para desactivar"</string>
     <string name="screen_pinning_unlock_pin" msgid="8716638956097417023">"Solicitar PIN para desactivar"</string>
     <string name="screen_pinning_unlock_password" msgid="4957969621904790573">"Solicitar contraseña para desactivar"</string>
@@ -3944,6 +3957,7 @@
     </plurals>
     <string name="runtime_permissions_summary_no_permissions_granted" msgid="7456745929035665029">"No se han concedido permisos"</string>
     <string name="runtime_permissions_summary_no_permissions_requested" msgid="7174876170116073356">"No se han solicitado permisos"</string>
+    <string name="runtime_permissions_summary_control_app_access" msgid="3744591396348990500">"Controla el acceso de las aplicaciones a tus datos"</string>
     <string name="filter_all_apps" msgid="6645539744080251371">"Todas las aplicaciones"</string>
     <string name="filter_enabled_apps" msgid="8868356616126759124">"Aplicaciones instaladas"</string>
     <string name="filter_instant_apps" msgid="2292108467020380068">"Aplicaciones instantáneas"</string>
@@ -4589,7 +4603,7 @@
     <string name="app_info_storage_title" msgid="4076977173803093808">"Espacio usado"</string>
     <string name="webview_uninstalled_for_user" msgid="627352948986275488">"(opción desinstalada para <xliff:g id="USER">%s</xliff:g>)"</string>
     <string name="webview_disabled_for_user" msgid="5809886172032644498">"(opción inhabilitada para <xliff:g id="USER">%s</xliff:g>)"</string>
-    <string name="autofill_app" msgid="7595308061826307921">"Servicio Autocompletar"</string>
+    <string name="autofill_app" msgid="7595308061826307921">"Autocompletar"</string>
     <string name="autofill_keywords" msgid="6260653325195017912">"automático, completar, autocompletar"</string>
     <string name="autofill_confirmation_message" msgid="4888767934273494272">"&lt;b&gt;Asegúrate de que confías en esta aplicación&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; &lt;xliff:g id=app_name example=Autocompletar de Google&gt;%1$s&lt;/xliff:g&gt; utiliza el contenido que se muestra en la pantalla para determinar el texto que se puede autocompletar."</string>
     <string name="debug_autofill_category" msgid="5998163555428196185">"Autocompletar"</string>
@@ -4641,6 +4655,8 @@
     <string name="platform_compat_dashboard_summary" msgid="4036546607938791337">"Activar o desactivar cambios de compatibilidad de la aplicación"</string>
     <string name="platform_compat_default_enabled_title" msgid="8973137337738388024">"Cambios habilitados de manera predeterminada"</string>
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Cambios inhabilitados de manera predeterminada"</string>
+    <string name="platform_compat_dialog_title_no_apps" msgid="4387656000745989506">"Sin apps disponibles"</string>
+    <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Los cambios en la compatibilidad de las aplicaciones solo se pueden modificar en aplicaciones depurables; instala una aplicación de este tipo e inténtalo de nuevo."</string>
     <string name="unsupported_setting_summary" product="default" msgid="1085229417771470172">"El teléfono no admite esta opción"</string>
     <string name="unsupported_setting_summary" product="tablet" msgid="7402414129786489664">"El tablet no admite esta opción"</string>
     <string name="unsupported_setting_summary" product="device" msgid="3422953459122926833">"El dispositivo no admite esta opción"</string>
@@ -4813,6 +4829,7 @@
     <string name="network_connection_timeout_dialog_ok" msgid="6022675321823723755">"Reintentar"</string>
     <string name="network_connection_errorstate_dialog_message" msgid="3360714322047603239">"Se ha producido un error. La aplicación ha cancelado la solicitud para elegir un dispositivo."</string>
     <string name="network_connection_connect_successful" msgid="2587314077675642476">"Se ha conectado correctamente"</string>
+    <string name="network_connection_connect_failure" msgid="6803313816657494319">"Error de conexión"</string>
     <string name="network_connection_request_dialog_showall" msgid="6392059758456994944">"Mostrar todo"</string>
     <string name="network_connection_searching_message" msgid="8521819623516926482">"Buscando dispositivo…"</string>
     <string name="network_connection_connecting_message" msgid="433189540877274889">"Conectando con el dispositivo…"</string>
@@ -4855,14 +4872,6 @@
       <item quantity="other"><xliff:g id="SERVICE_COUNT">%1$d</xliff:g> aplicaciones tienen acceso completo a tu dispositivo</item>
       <item quantity="one">1 aplicación tiene acceso completo a tu dispositivo</item>
     </plurals>
-    <string name="manage_app_notification" msgid="8272999309499332742">"Gestionar notificaciones de <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
-    <string name="no_suggested_app" msgid="2482015948111074654">"No hay ninguna aplicación sugerida"</string>
-    <plurals name="notification_few_channel_count_summary" formatted="false" msgid="6610904178351403728">
-      <item quantity="other"><xliff:g id="NOTIFICATION_CHANNEL_COUNT_1">%1$d</xliff:g> canales de notificaciones.</item>
-      <item quantity="one"><xliff:g id="NOTIFICATION_CHANNEL_COUNT_0">%1$d</xliff:g> canal de notificaciones.</item>
-    </plurals>
-    <string name="notification_many_channel_count_summary" msgid="6324166979527102233">"<xliff:g id="NOTIFICATION_CHANNEL_COUNT">%1$d</xliff:g> canales de notificaciones. Toca para gestionarlos todos."</string>
-    <string name="recently_installed_app" msgid="2899861390925377564">"Has instalado esta aplicación recientemente."</string>
     <string name="media_output_panel_title" msgid="5920946795078065159">"Cambiar salida"</string>
     <string name="media_output_panel_summary_of_playing_device" msgid="6998758947764222915">"Reproduciendo contenido en <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
     <string name="media_output_disconnected_status" msgid="5567111639832431865">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> (desconectado)"</string>
@@ -4915,6 +4924,7 @@
     <string name="power_menu_privacy" msgid="7900052501075197854">"Contenido sensible"</string>
     <string name="power_menu_privacy_show" msgid="2112741022037054383">"Mostrar tarjetas y controles cuando el dispositivo esté bloqueado"</string>
     <string name="power_menu_privacy_show_controls" msgid="8294874046577167797">"Mostrar controles en la pantalla de bloqueo"</string>
+    <string name="power_menu_privacy_show_cards" msgid="8937303188629541026">"Mostrar tarjetas en la pantalla de bloqueo"</string>
     <string name="power_menu_privacy_hide" msgid="1617102911157977095">"Ocultar tarjetas y controles cuando el dispositivo esté bloqueado"</string>
     <string name="power_menu_privacy_not_secure" msgid="6247119934128206924">"Para usar esta opción, primero tienes que configurar un bloqueo de pantalla"</string>
     <string name="device_controls_setting_toggle" msgid="8972005569207737469">"Mostrar control de dispositivos"</string>
@@ -4932,4 +4942,13 @@
     <string name="no_5g_in_dsds_text" product="tablet" msgid="7460150915372077523">"Cuando este tablet tenga dos tarjetas SIM, solo podrá utilizar 4G. "<annotation id="url">"Más información"</annotation></string>
     <string name="no_5g_in_dsds_text" product="device" msgid="8206029713556021714">"Cuando este dispositivo tenga dos tarjetas SIM, solo podrá utilizar 4G. "<annotation id="url">"Más información"</annotation></string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Suspender ejecución de aplicaciones en caché"</string>
+    <string name="overlay_settings_title" msgid="1032863083496396365">"Permitir las superposiciones en pantallas de Ajustes"</string>
+    <string name="overlay_settings_summary" msgid="2745336273786148166">"Permite que otras aplicaciones se superpongan a la aplicación ajustes"</string>
+    <string name="media_controls_title" msgid="403271085636252597">"Multimedia"</string>
+    <string name="media_controls_summary" msgid="5032071475867165587">"Ocultar reproductor al acabar la sesión multimedia"</string>
+    <string name="media_controls_resume_description" msgid="2333689676163363582">"El reproductor te permite seguir con una sesión desde el panel ampliado de ajustes rápidos."</string>
+    <string name="media_controls_hide_player" msgid="2751439192580884015">"Ocultar reproductor"</string>
+    <string name="media_controls_show_player" msgid="8504571042365814021">"Mostrar reproductor"</string>
+    <string name="media_controls_no_players" msgid="3493023121892175946">"No hay reproductores disponibles"</string>
+    <string name="keywords_media_controls" msgid="8345490568291778638">"multimedia"</string>
 </resources>

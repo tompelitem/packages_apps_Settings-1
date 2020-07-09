@@ -1718,6 +1718,8 @@
 
     <!-- Wifi Display settings. The title of the screen. [CHAR LIMIT=40] -->
     <string name="wifi_display_settings_title">Cast</string>
+    <!-- Wifi Display settings. The keywords of the setting. [CHAR LIMIT=NONE] -->
+    <string name="keywords_wifi_display_settings">mirror</string>
     <!-- Checkbox title for enabling particual wifi as shared -->
     <string name="share_this_wifi">Extend Wi-Fi coverage</string>
     <!-- Wifi Display settings. The title of a menu item to enable wireless display [CHAR LIMIT=40] -->
@@ -2793,6 +2795,10 @@
     <string name="peak_refresh_rate_title">Smooth Display</string>
     <!-- Display settings screen, peak refresh rate settings summary [CHAR LIMIT=NONE] -->
     <string name="peak_refresh_rate_summary">Automatically raises the refresh rate from 60 to 90 Hz for some content. Increases battery usage.</string>
+    <!-- Display developer settings: Force to the highest refresh rate [CHAR LIMIT=NONE] -->
+    <string name="force_high_refresh_rate_toggle">Smooth Display</string>
+    <!-- Display developer settings: Force to the highest refresh rate description [CHAR LIMIT=NONE]-->
+    <string name="force_high_refresh_rate_desc">Highest refresh rate for improved touch responsiveness &amp; animation quality. Increases battery usage.</string>
     <!-- Display settings screen, setting option name to enable adaptive sleep [CHAR LIMIT=30] -->
     <string name="adaptive_sleep_title">Screen attention</string>
     <!-- Setting option summary when adaptive sleep is on [CHAR LIMIT=NONE] -->
@@ -3326,6 +3332,8 @@
     <string name="storage_menu_free">Free up space</string>
     <!-- Storage setting. Menu option for accessing the storage manager settings. [CHAR LIMIT=30] -->
     <string name="storage_menu_manage">Manage storage</string>
+    <!-- Storage setting. Keywords for Free up space. [CHAR LIMIT=NONE] -->
+    <string name="keywords_storage_menu_free">clean, storage</string>
 
     <!-- Storage setting.  Title for USB transfer settings [CHAR LIMIT=30]-->
     <string name="storage_title_usb">USB computer connection</string>
@@ -4328,7 +4336,10 @@
     <!-- Category title listing recently used apps [CHAR_LIMIT=50]-->
     <string name="recent_app_category_title">Recently opened apps</string>
     <!-- Preference title for showing all apps on device [CHAR_LIMIT=50]-->
-    <string name="see_all_apps_title">See all <xliff:g id="count" example="3">%1$d</xliff:g> apps</string>
+    <plurals name="see_all_apps_title">
+        <item quantity="one">See all apps</item>
+        <item quantity="other">See all %1$d apps</item>
+    </plurals>
 
     <!-- Title of the dialog that asks the user to contact the IT admin to reset password [CHAR LIMIT=40] -->
     <string name="forgot_password_title">Contact your IT admin</string>
@@ -4735,6 +4746,8 @@
     <string name="keyboard_and_input_methods_category">Keyboards</string>
     <!-- Title for the 'virtual keyboard' preference sub-screen. [CHAR LIMIT=35] -->
     <string name="virtual_keyboard_category">On-screen keyboard</string>
+    <!-- Keywords for the 'virtual keyboard' preference sub-screen. [CHAR LIMIT=35] -->
+    <string name="keywords_virtual_keyboard">Gboard</string>
     <!-- Title for the 'available virtual keyboard' preference sub-screen. [CHAR LIMIT=35] -->
     <string name="available_virtual_keyboard_category">Available On-screen keyboard</string>
     <!-- Title for the button to trigger the 'Manage keyboards' preference sub-screen, where the user can turn on/off installed virtual keyboards.[CHAR LIMIT=35] -->
@@ -7314,7 +7327,7 @@
     <!-- Call Manager settings summary.  [CHAR LIMIT=50] -->
     <string name="call_manager_summary"><xliff:g id="app">%1$s</xliff:g></string>
     <!-- Cell Broadcast settings title.  [CHAR LIMIT=50] -->
-    <string name="cell_broadcast_settings">Emergency alerts</string>
+    <string name="cell_broadcast_settings">Wireless emergency alerts</string>
     <!-- Network operators settings title.  [CHAR LIMIT=50] -->
     <string name="network_operators_settings">Network operators</string>
     <!-- Access point names title.  [CHAR LIMIT=50] -->
@@ -7792,6 +7805,9 @@
 
     <!-- Sound: Title for the option managing whether or not to vibrate when ringing. [CHAR LIMIT=30] -->
     <string name="vibrate_when_ringing_title">Vibrate for calls</string>
+
+    <!-- Sound: Keywords for Vibrate for calls. [CHAR LIMIT=NONE] -->
+    <string name="keywords_vibrate_for_calls">Vibration</string>
 
     <!-- Sound: Option for vibrate when ringing setting: Never vibrate. [CHAR LIMIT=40] -->
     <string name="vibrate_when_ringing_option_never_vibrate">Never vibrate</string>
@@ -8742,6 +8758,11 @@
     to the user's IT admin. [CHAR LIMIT=NONE] -->
     <string name="interact_across_profiles_summary_2">Only connect apps if you trust them not to share personal data with your IT admin.</string>
 
+    <!-- Settings text. This text lets a user know that they can disconnect work and personal apps from
+    the Privacy page in settings, This is only shown when the connected app page is launched via
+    an app, not when navigated to via settings. [CHAR LIMIT=NONE] -->
+    <string name="interact_across_profiles_summary_3">You can disconnect apps anytime in your device\u2019s privacy settings.</string>
+
     <!-- Dialog title. This dialog is shown when a user tries to connect a work app to a personal
     app (e.g. their work Calendar to their personal Calendar), and it's confirming that they should
     connect the apps only if they trust the work app with their personal data. [CHAR LIMIT=NONE] -->
@@ -8832,6 +8853,9 @@
 
     <!-- [CHAR LIMIT=NONE] App notification settings: link to app notification settings-->
     <string name="app_settings_link">Additional settings in the app</string>
+
+    <!-- [CHAR LIMIT=NONE] Apps & notification settings: summary on the link to notification settings-->
+    <string name="notification_screen_summary">Notification history, bubbles, recently sent</string>
 
     <!-- [CHAR LIMIT=45] App notification listing summary, blocked apps -->
     <string name="app_notification_listing_summary_zero">On for all apps</string>
@@ -9526,6 +9550,9 @@
 
     <!-- Runtime permissions preference summary, shown when the app requests no permissions. [CHAR LIMIT=40] -->
     <string name="runtime_permissions_summary_no_permissions_requested">No permissions requested</string>
+
+    <!-- Runtime permissions preference summary, which describes what the permission manager does. [CHAR LIMIT=NONE] -->
+    <string name="runtime_permissions_summary_control_app_access">Control app access to your data</string>
 
     <!-- Label for showing all apps in list [CHAR LIMIT=30] -->
     <string name="filter_all_apps">All apps</string>
@@ -11356,6 +11383,10 @@
     <string name="platform_compat_default_disabled_title">Default disabled changes</string>
     <!-- Title for target SDK gated app compat changes category (do not translate 'targetSdkVersion') [CHAR LIMIT=50] -->
     <string name="platform_compat_target_sdk_title">Enabled for targetSdkVersion &gt; <xliff:g id="number" example="29">%d</xliff:g></string>
+    <!-- Title for the dialog shown when no debuggable apps are available [CHAR LIMIT=30] -->
+    <string name="platform_compat_dialog_title_no_apps">No apps available</string>
+    <!-- Explanatory text shown when no debuggable apps are available [CHAR LIMIT=NONE] -->
+    <string name="platform_compat_dialog_text_no_apps">App compatibility changes can only be modified for debuggable apps. Install a debuggable app and try again.</string>
 
     <!-- Slices Strings -->
 
@@ -11873,6 +11904,8 @@
     <string name="network_connection_errorstate_dialog_message">Something came up. The application has cancelled the request to choose a device.</string>
     <!-- Toast message when connection is successful [CHAR LIMIT=30] -->
     <string name="network_connection_connect_successful">Connection successful</string>
+    <!-- Toast message when connection is failure [CHAR LIMIT=30] -->
+    <string name="network_connection_connect_failure">Connection failed</string>
     <!-- Neutral button for Network connection request Dialog [CHAR LIMIT=30] -->
     <string name="network_connection_request_dialog_showall">Show all</string>
     <!-- Message for Network connection searching progress Dialog. Searching for wifi ap. [CHAR LIMIT=40] -->
@@ -12130,6 +12163,9 @@
     <!-- Power menu setting privacy show controls [CHAR LIMIT=NONE] -->
     <string name="power_menu_privacy_show_controls">Show controls when locked</string>
 
+    <!-- Power menu setting privacy show cards [CHAR LIMIT=NONE] -->
+    <string name="power_menu_privacy_show_cards">Show cards when locked</string>
+
     <!-- Power menu setting privacy hide all [CHAR LIMIT=NONE] -->
     <string name="power_menu_privacy_hide">Hide cards and controls when locked</string>
 
@@ -12178,14 +12214,34 @@
     <!-- Content description for the 5G limited VoLTE dialog. [CHAR LIMIT=NONE] -->
     <string name="volte_5G_limited_text">This also turns off your 5G connection.\nDuring a voice call, you can\u2019t use the internet and some apps may not work.</string>
     <!-- Footer to show current limitation of 5G on DSDS mode. [CHAR LIMIT=NONE] -->
-    <string name="no_5g_in_dsds_text" product="default">When using 2 SIMs, this phone will be limited to 4G. <annotation id="url">Learn more</annotation>.</string>
+    <string name="no_5g_in_dsds_text" product="default">When using 2 SIMs, this phone will be limited to 4G. <annotation id="url">Learn more</annotation></string>
     <!-- Footer to show current limitation of 5G on DSDS mode for tablets. [CHAR LIMIT=NONE] -->
-    <string name="no_5g_in_dsds_text" product="tablet">When using 2 SIMs, this tablet will be limited to 4G. <annotation id="url">Learn more</annotation>.</string>
+    <string name="no_5g_in_dsds_text" product="tablet">When using 2 SIMs, this tablet will be limited to 4G. <annotation id="url">Learn more</annotation></string>
     <!-- Footer to show current limitation of 5G on DSDS mode for general devices. [CHAR LIMIT=NONE] -->
-    <string name="no_5g_in_dsds_text" product="device">When using 2 SIMs, this device will be limited to 4G. <annotation id="url">Learn more</annotation>.</string>
+    <string name="no_5g_in_dsds_text" product="device">When using 2 SIMs, this device will be limited to 4G. <annotation id="url">Learn more</annotation></string>
     <!-- Help URI, 5G limitation in DSDS condition. [DO NOT TRANSLATE] -->
     <string name="help_uri_5g_dsds" translatable="false"></string>
 
     <!-- Developer settings: app freezer title [CHAR LIMIT=50]-->
     <string name="cached_apps_freezer">Suspend execution for cached apps</string>
+
+    <!-- Title for allowing screen overlays on Settings app. [CHAR LIMIT=50]-->
+    <string name="overlay_settings_title">Allow screen overlays on Settings</string>
+    <!-- Summary for allowing screen overlays on Settings app. [CHAR LIMIT=NONE]-->
+    <string name="overlay_settings_summary">Allow apps that can display over other apps to overlay Settings screens</string>
+
+    <!-- Title for media control settings [CHAR LIMIT=50]-->
+    <string name="media_controls_title">Media</string>
+    <!-- Summary for media control settings [CHAR LIMIT=60]-->
+    <string name="media_controls_summary">Hide player when the media session has ended</string>
+    <!-- Description of toggle to enable or disable the media resumption feature in quick settings [CHAR LIMIT=NONE]-->
+    <string name="media_controls_resume_description">The player allows you to resume a session from the expanded Quick Settings panel.</string>
+    <!-- Subtext for media settings when the player will be hidden [CHAR LIMIT=50] -->
+    <string name="media_controls_hide_player">Hide player</string>
+    <!-- Subtext for media settings when the player will be shown [CHAR LIMIT=50] -->
+    <string name="media_controls_show_player">Show player</string>
+    <!-- Subtext for media settings when no players can be shown [CHAR LIMIT=50] -->
+    <string name="media_controls_no_players">No players available</string>
+    <!-- Keywords for the media controls setting [CHAR LIMIT=NONE]-->
+    <string name="keywords_media_controls">media</string>
 </resources>

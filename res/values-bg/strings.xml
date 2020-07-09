@@ -751,6 +751,7 @@
     <string name="bluetooth_max_connected_audio_devices_string" msgid="3114156958598821615">"Максимален брой свързани аудиоустройства с Bluetooth"</string>
     <string name="bluetooth_max_connected_audio_devices_dialog_title" msgid="4056811727247312473">"Изберете максималния брой свързани аудиоустройства с Bluetooth"</string>
     <string name="wifi_display_settings_title" msgid="6451625615274960175">"Предаване"</string>
+    <string name="keywords_wifi_display_settings" msgid="5753883229564422679">"дублиране"</string>
     <string name="wifi_display_enable_menu_item" msgid="7391841780777318134">"Активир. на безжичния дисплей"</string>
     <string name="wifi_display_no_devices_found" msgid="7904877793677102805">"Няма намерени устройства наблизо."</string>
     <string name="wifi_display_status_connecting" msgid="530880182560077334">"Установява се връзка"</string>
@@ -784,7 +785,7 @@
     <string name="nfc_disclaimer_title" msgid="3696580694485048039">"Включване на КБП"</string>
     <string name="nfc_disclaimer_content" msgid="8256675597551036207">"Чрез КБП се обменят данни между това устройство и други в близост или целеви такива, като например терминали за плащане, четци за достъп и интерактивни реклами или маркери."</string>
     <string name="nfc_secure_settings_title" msgid="4906958426927741485">"Изискване за отключване на устройството за NFC"</string>
-    <string name="nfc_secure_toggle_summary" product="default" msgid="4591286109299690373">"Разрешаване на използването на КБП за плащане и прехвърляне само при отключен екран"</string>
+    <string name="nfc_secure_toggle_summary" product="default" msgid="4591286109299690373">"Разрешаване на използването на NFC за плащане и прехвърляне само при отключен екран"</string>
     <string name="android_beam_settings_title" msgid="2797963824490671295">"Android Beam"</string>
     <string name="android_beam_on_summary" msgid="6067720758437490896">"В готовност за предаване на съдържание на приложения чрез КБП"</string>
     <string name="android_beam_off_summary" msgid="5693961375631325042">"Изключено"</string>
@@ -1189,6 +1190,8 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"Плавно показване"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"Автоматично увеличава честотата на опресняване от 60 на 90 Hz за част от съдържанието. По-интензивно използване на батерията."</string>
+    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"Плавно показване"</string>
+    <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"Най-висока честота на опресняване за по-добро реагиране при докосване и качество на анимациите. По-интензивно използване на батерията."</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"Внимание към екрана"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"Вкл. – Екранът няма да се изключи, ако гледате в него"</string>
     <string name="adaptive_sleep_summary_off" msgid="5272156339202897523">"Изключено"</string>
@@ -1435,6 +1438,7 @@
     <string name="storage_menu_explore" msgid="3048031115521594488">"Разглеждане"</string>
     <string name="storage_menu_free" msgid="616100170298501673">"Освобождаване на място"</string>
     <string name="storage_menu_manage" msgid="7465522758801346408">"Управление на хранилището"</string>
+    <string name="keywords_storage_menu_free" msgid="2275406357317597106">"изчистване, хранилище"</string>
     <string name="storage_title_usb" msgid="1332488715547400452">"USB връзка с компютър"</string>
     <string name="usb_connection_category" msgid="2288543238378907242">"Свързване като"</string>
     <string name="usb_mtp_title" msgid="9068009584556422314">"Мултимедийно устройство (MTP)"</string>
@@ -1846,7 +1850,10 @@
     <string name="install_applications" msgid="3921609656584369901">"Неизвестни източници"</string>
     <string name="install_applications_title" msgid="7890233747559108106">"Всички източници: Разрешаване"</string>
     <string name="recent_app_category_title" msgid="189758417804427533">"Наскоро отворени приложения"</string>
-    <string name="see_all_apps_title" msgid="8363320482315507386">"Преглед на всички приложения (<xliff:g id="COUNT">%1$d</xliff:g>)"</string>
+    <plurals name="see_all_apps_title" formatted="false" msgid="6864581406735745400">
+      <item quantity="other">Преглед на всички %1$d приложения</item>
+      <item quantity="one">Преглед на всички приложения</item>
+    </plurals>
     <string name="forgot_password_title" msgid="3967873480875239885">"Обърнете се към администратора"</string>
     <string name="forgot_password_text" msgid="2583194470767613163">"Можете да получите помощ за задаването на нов ПИН код, фигура или парола"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"Таблетът и личните ви данни са по-уязвими към атаки от неизвестни приложения. С инсталирането на приложения от този източник приемате, че вие носите отговорност в случай на повреда на устройството ви или при загуба на данни вследствие използването на такива приложения."</string>
@@ -2021,6 +2028,7 @@
     <string name="spellchecker_language" msgid="8905487366580285282">"Език"</string>
     <string name="keyboard_and_input_methods_category" msgid="5296847777802891649">"Клавиатури"</string>
     <string name="virtual_keyboard_category" msgid="2339505603075527212">"Екранна клавиатура"</string>
+    <string name="keywords_virtual_keyboard" msgid="1494726424879503434">"Gboard"</string>
     <string name="available_virtual_keyboard_category" msgid="6930012948152749337">"Налична екранна клавиатура"</string>
     <string name="add_virtual_keyboard" msgid="2515850206289352606">"Управление на екранните клавиатури"</string>
     <string name="keyboard_assistance_category" msgid="7320599809770932032">"Помощ за клавиатурата"</string>
@@ -3078,7 +3086,7 @@
     <string name="call_manager_title" msgid="3397433159509629466">"Мениджър на обажданията"</string>
     <!-- no translation found for call_manager_summary (2558839230880919191) -->
     <skip />
-    <string name="cell_broadcast_settings" msgid="6414938308090183446">"Сигнали при спешни случаи"</string>
+    <string name="cell_broadcast_settings" msgid="2416980110093867199">"Безжични сигнали при спешни случаи"</string>
     <string name="network_operators_settings" msgid="5105453353329748954">"Мрежови оператори"</string>
     <string name="access_point_names" msgid="5768430498022188057">"Имена на точките за достъп"</string>
     <string name="enhanced_4g_lte_mode_title" msgid="6624700245232361149">"VoLTE"</string>
@@ -3297,6 +3305,7 @@
     <string name="notification_sound_default" msgid="8630353701915294299">"Стандартен звук за известяване"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"Стандартен звук за будилника"</string>
     <string name="vibrate_when_ringing_title" msgid="3436203665622843196">"Вибриране при обаждания"</string>
+    <string name="keywords_vibrate_for_calls" msgid="1019870409730074899">"Вибриране"</string>
     <string name="vibrate_when_ringing_option_never_vibrate" msgid="6518980907289156517">"Без вибриране"</string>
     <string name="vibrate_when_ringing_option_always_vibrate" msgid="968652667232075466">"Вибриране"</string>
     <string name="vibrate_when_ringing_option_ramping_ringer" msgid="2798848945803840348">"Вибриране, след което постепенно звънене"</string>
@@ -3482,7 +3491,9 @@
     <string name="bubble_app_setting_selected" msgid="4324386074198040675">"Избраните разговори могат да се показват като балончета"</string>
     <string name="bubble_app_setting_none" msgid="8643594711863996418">"Нищо не може да се показва като балонче"</string>
     <string name="bubble_app_setting_selected_conversation_title" msgid="3060958976857529933">"Разговори"</string>
-    <string name="bubble_app_setting_excluded_conversation_title" msgid="324818960338773945">"Всички разговори мога да се показват като балончета освен"</string>
+    <string name="bubble_app_setting_excluded_conversation_title" msgid="324818960338773945">"Всички разговори могат да се показват като балончета освен"</string>
+    <string name="bubble_app_setting_unbubble_conversation" msgid="1769789500566080427">"Изключете балончетата за този разговор"</string>
+    <string name="bubble_app_setting_bubble_conversation" msgid="1461981680982964285">"Включете балончетата за този разговор"</string>
     <string name="swipe_direction_title" msgid="4260320464727178413">"Действия при прекарване на пръст"</string>
     <string name="swipe_direction_ltr" msgid="5137180130142633085">"Прекарайте пръст надясно, за да отхвърлите, и наляво за показване на менюто"</string>
     <string name="swipe_direction_rtl" msgid="1707391213940663992">"Прекарайте пръст наляво, за да отхвърлите, и надясно за показване на менюто"</string>
@@ -3627,6 +3638,7 @@
     <string name="interact_across_profiles_switch_disabled" msgid="4312196170211463988">"Свързване на тези приложения"</string>
     <string name="interact_across_profiles_summary_1" msgid="6093976896137600231">"Свързаните приложения споделят разрешенията си и имат достъп до данните си."</string>
     <string name="interact_across_profiles_summary_2" msgid="505748305453633885">"Свързвайте приложенията само ако им имате доверие, че няма да споделят личните ви данни със системния ви администратор."</string>
+    <string name="interact_across_profiles_summary_3" msgid="444428694843299854">"Можете да прекратите връзката с приложенията по всяко време от настройките за поверителност на устройството си."</string>
     <string name="interact_across_profiles_consent_dialog_title" msgid="8530621211216508681">"Искате ли да доверите личните си данни на служебното приложение <xliff:g id="NAME">%1$s</xliff:g>?"</string>
     <string name="interact_across_profiles_consent_dialog_summary" msgid="3949870271562055048">"Свързвайте приложенията само ако им имате доверие, че няма да споделят личните ви данни със системния ви администратор."</string>
     <string name="interact_across_profiles_consent_dialog_app_data_title" msgid="8436318876213958940">"Данни от приложенията"</string>
@@ -3656,6 +3668,7 @@
     </plurals>
     <string name="no_channels" msgid="4716199078612071915">"Все още няма публикувани известия от това приложение"</string>
     <string name="app_settings_link" msgid="6725453466705333311">"Допълнителни настройки в приложението"</string>
+    <string name="notification_screen_summary" msgid="5984915275134654822">"История на известията, балончета, наскоро изпратени"</string>
     <string name="app_notification_listing_summary_zero" msgid="2988400013221120744">"Включено за всички приложения"</string>
     <plurals name="app_notification_listing_summary_others" formatted="false" msgid="1506127395400503717">
       <item quantity="other">Изключено за <xliff:g id="COUNT_1">%d</xliff:g> приложения</item>
@@ -3808,7 +3821,7 @@
       <item quantity="one"><xliff:g id="APP_NAME_0">%s</xliff:g> може да прекъсва</item>
     </plurals>
     <string name="zen_mode_apps_bypassing_list_count" msgid="1581384924379825405">"още <xliff:g id="NUMBER">%d</xliff:g>"</string>
-    <string name="zen_mode_bypassing_apps_title" msgid="4142154650779609193">"Изключения за приложения"</string>
+    <string name="zen_mode_bypassing_apps_title" msgid="371050263563164059">"Приложения"</string>
     <string name="zen_mode_bypassing_apps_all_summary" msgid="5197566190120503132">"Всички известия"</string>
     <string name="zen_mode_bypassing_apps_some_summary" msgid="1514572070650411509">"Някои известия"</string>
     <string name="zen_mode_bypassing_app_channels_header" msgid="4011017798712587373">"Известия, които могат да прекъсват режима"</string>
@@ -3944,6 +3957,7 @@
     </plurals>
     <string name="runtime_permissions_summary_no_permissions_granted" msgid="7456745929035665029">"Няма предоставени разрешения"</string>
     <string name="runtime_permissions_summary_no_permissions_requested" msgid="7174876170116073356">"Няма заявени разрешения"</string>
+    <string name="runtime_permissions_summary_control_app_access" msgid="3744591396348990500">"Управлявайте достъпа на приложенията до данните ви"</string>
     <string name="filter_all_apps" msgid="6645539744080251371">"Всички приложения"</string>
     <string name="filter_enabled_apps" msgid="8868356616126759124">"Инсталирани приложения"</string>
     <string name="filter_instant_apps" msgid="2292108467020380068">"Мигновени приложения"</string>
@@ -4641,6 +4655,8 @@
     <string name="platform_compat_dashboard_summary" msgid="4036546607938791337">"Включване/изключване на промените в съвместимостта на приложенията"</string>
     <string name="platform_compat_default_enabled_title" msgid="8973137337738388024">"Промени, свързани с активирането по подразбиране"</string>
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"Промени, свързани с деактивирането по подразбиране"</string>
+    <string name="platform_compat_dialog_title_no_apps" msgid="4387656000745989506">"Няма приложения"</string>
+    <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"Промени в съвместимостта на приложенията могат да се извършват само за приложения с възможност за отстраняване на грешки. Инсталирайте такова и опитайте отново."</string>
     <string name="unsupported_setting_summary" product="default" msgid="1085229417771470172">"Настройката не се поддържа на този телефон"</string>
     <string name="unsupported_setting_summary" product="tablet" msgid="7402414129786489664">"Настройката не се поддържа на този таблет"</string>
     <string name="unsupported_setting_summary" product="device" msgid="3422953459122926833">"Настройката не се поддържа на това устройство"</string>
@@ -4813,6 +4829,7 @@
     <string name="network_connection_timeout_dialog_ok" msgid="6022675321823723755">"Нов опит"</string>
     <string name="network_connection_errorstate_dialog_message" msgid="3360714322047603239">"Нещо стана. Приложението анулира заявката за избиране на устройство."</string>
     <string name="network_connection_connect_successful" msgid="2587314077675642476">"Връзката е успешна"</string>
+    <string name="network_connection_connect_failure" msgid="6803313816657494319">"Връзката не бе успешна"</string>
     <string name="network_connection_request_dialog_showall" msgid="6392059758456994944">"Показване на всички"</string>
     <string name="network_connection_searching_message" msgid="8521819623516926482">"Търси се устройство…"</string>
     <string name="network_connection_connecting_message" msgid="433189540877274889">"Установява се връзка с устройството…"</string>
@@ -4855,14 +4872,6 @@
       <item quantity="other"><xliff:g id="SERVICE_COUNT">%1$d</xliff:g> приложения имат пълен достъп до устройството ви</item>
       <item quantity="one">1 приложение има пълен достъп до устройството ви</item>
     </plurals>
-    <string name="manage_app_notification" msgid="8272999309499332742">"Управление на известията от <xliff:g id="APP_NAME">%1$s</xliff:g>"</string>
-    <string name="no_suggested_app" msgid="2482015948111074654">"Няма предложено приложение"</string>
-    <plurals name="notification_few_channel_count_summary" formatted="false" msgid="6610904178351403728">
-      <item quantity="other"><xliff:g id="NOTIFICATION_CHANNEL_COUNT_1">%1$d</xliff:g> канала за известия.</item>
-      <item quantity="one"><xliff:g id="NOTIFICATION_CHANNEL_COUNT_0">%1$d</xliff:g> канал за известия.</item>
-    </plurals>
-    <string name="notification_many_channel_count_summary" msgid="6324166979527102233">"<xliff:g id="NOTIFICATION_CHANNEL_COUNT">%1$d</xliff:g> канала за известия. Докоснете, за да управлявате всички."</string>
-    <string name="recently_installed_app" msgid="2899861390925377564">"Наскоро инсталирахте това приложение."</string>
     <string name="media_output_panel_title" msgid="5920946795078065159">"Превключване на изхода"</string>
     <string name="media_output_panel_summary_of_playing_device" msgid="6998758947764222915">"Понастоящем се възпроизвежда на <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
     <string name="media_output_disconnected_status" msgid="5567111639832431865">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> (връзката е прекратена)"</string>
@@ -4915,6 +4924,7 @@
     <string name="power_menu_privacy" msgid="7900052501075197854">"Деликатно съдържание"</string>
     <string name="power_menu_privacy_show" msgid="2112741022037054383">"Показване на картите и контролите, когато са заключени"</string>
     <string name="power_menu_privacy_show_controls" msgid="8294874046577167797">"Показване на контролите при заключен екран"</string>
+    <string name="power_menu_privacy_show_cards" msgid="8937303188629541026">"Показване на картите при заключен екран"</string>
     <string name="power_menu_privacy_hide" msgid="1617102911157977095">"Скриване на картите и контролите, когато са заключени"</string>
     <string name="power_menu_privacy_not_secure" msgid="6247119934128206924">"За да използвате, първо задайте заключване на екрана"</string>
     <string name="device_controls_setting_toggle" msgid="8972005569207737469">"Показване на контролите за устройството"</string>
@@ -4932,4 +4942,13 @@
     <string name="no_5g_in_dsds_text" product="tablet" msgid="7460150915372077523">"Когато използвате 2 SIM карти, този таблет ще бъде ограничен до 4G. "<annotation id="url">"Научете повече"</annotation>"."</string>
     <string name="no_5g_in_dsds_text" product="device" msgid="8206029713556021714">"Когато използвате 2 SIM карти, това устройство ще бъде ограничено до 4G. "<annotation id="url">"Научете повече"</annotation>"."</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"Спиране на изпълнението на кешираните приложения"</string>
+    <string name="overlay_settings_title" msgid="1032863083496396365">"Разрешаване на екранни наслагвания в/у „Настройки“"</string>
+    <string name="overlay_settings_summary" msgid="2745336273786148166">"Разрешаване на приложенията, които могат да се показват върху други приложения, да се наслагват върху екрана на „Настройки“"</string>
+    <string name="media_controls_title" msgid="403271085636252597">"Мултимедия"</string>
+    <string name="media_controls_summary" msgid="5032071475867165587">"Скриване на плейъра при прикл. сесия за мултимедия"</string>
+    <string name="media_controls_resume_description" msgid="2333689676163363582">"Плейърът ви позволява да възобновите дадена сесия от разгънатия панел с бързи настройки."</string>
+    <string name="media_controls_hide_player" msgid="2751439192580884015">"Скриване на плейъра"</string>
+    <string name="media_controls_show_player" msgid="8504571042365814021">"Показване на плейъра"</string>
+    <string name="media_controls_no_players" msgid="3493023121892175946">"Няма налични плейъри"</string>
+    <string name="keywords_media_controls" msgid="8345490568291778638">"мултимедия"</string>
 </resources>

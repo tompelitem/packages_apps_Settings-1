@@ -751,6 +751,7 @@
     <string name="bluetooth_max_connected_audio_devices_string" msgid="3114156958598821615">"সৰ্বাধিক সংযোজিত হৈ থকা ব্লুটুথ অডিঅ’ ডিভাইচৰ সংখ্যা"</string>
     <string name="bluetooth_max_connected_audio_devices_dialog_title" msgid="4056811727247312473">"সৰ্বাধিক সংখ্যক সংযুক্ত হৈ থকা ব্লুটুথ অডিঅ\' ডিভাইচ বাছনি কৰক"</string>
     <string name="wifi_display_settings_title" msgid="6451625615274960175">"কাষ্ট"</string>
+    <string name="keywords_wifi_display_settings" msgid="5753883229564422679">"আইনা"</string>
     <string name="wifi_display_enable_menu_item" msgid="7391841780777318134">"বেতাঁৰ ডিছপ্লে’ সক্ষম কৰক"</string>
     <string name="wifi_display_no_devices_found" msgid="7904877793677102805">"কোনো নিকটৱৰ্তী ডিভাইচ পোৱা নগ\'ল।"</string>
     <string name="wifi_display_status_connecting" msgid="530880182560077334">"সংযোগ কৰি থকা হৈছে"</string>
@@ -1189,6 +1190,8 @@
     <string name="display_white_balance_summary" msgid="7625456704950209050"></string>
     <string name="peak_refresh_rate_title" msgid="1878771412897140903">"মসৃণ ডিছপ্লে’"</string>
     <string name="peak_refresh_rate_summary" msgid="1527087897198455042">"কিছুমান সমলৰ বাবে ৰিফ্ৰেশ্বৰ হাৰ স্বয়ংক্ৰিয়ভাৱে ৬০ৰ পৰা ৯০হাৰ্টজলৈ বঢ়ায়। বেটাৰীৰ ব্যৱহাৰ বৃদ্ধি কৰে।"</string>
+    <string name="force_high_refresh_rate_toggle" msgid="7458268305727889355">"মসৃণ ডিছপ্লে’"</string>
+    <string name="force_high_refresh_rate_desc" msgid="7794566420873814875">"স্পৰ্শৰ উন্নত সংবেদনশীলতা আৰু এনিমেশ্বনৰ গুণগত মানৰ বাবে সৰ্বোচ্চ ৰিফ্ৰেশ্বৰ হাৰ। বেটাৰীৰ ব্যৱহাৰ বৃদ্ধি কৰে।"</string>
     <string name="adaptive_sleep_title" msgid="2987961991423539233">"স্ক্ৰীণৰ সতর্কতা"</string>
     <string name="adaptive_sleep_summary_on" msgid="313187971631243800">"অন / আপুনি যদি চাই থাকে তেন্তে স্ক্ৰীণখন কেতিয়াও বন্ধ নহয়"</string>
     <string name="adaptive_sleep_summary_off" msgid="5272156339202897523">"অফ আছে"</string>
@@ -1435,6 +1438,7 @@
     <string name="storage_menu_explore" msgid="3048031115521594488">"অন্বেষণ কৰক"</string>
     <string name="storage_menu_free" msgid="616100170298501673">"স্থান খালী কৰক"</string>
     <string name="storage_menu_manage" msgid="7465522758801346408">"সঞ্চয়াগাৰ পৰিচালনা কৰক"</string>
+    <string name="keywords_storage_menu_free" msgid="2275406357317597106">"মচক, ষ্ট’ৰেজ"</string>
     <string name="storage_title_usb" msgid="1332488715547400452">"USB কম্পিউটাৰ সংযোগ"</string>
     <string name="usb_connection_category" msgid="2288543238378907242">"এই হিচাপে সংযোগ কৰক"</string>
     <string name="usb_mtp_title" msgid="9068009584556422314">"মিডিয়া ডিভাইচ (এমটিপি)"</string>
@@ -1846,7 +1850,10 @@
     <string name="install_applications" msgid="3921609656584369901">"অজ্ঞাত উৎসবোৰ"</string>
     <string name="install_applications_title" msgid="7890233747559108106">"সকলো এপৰ উৎসক অনুমতি দিয়ক"</string>
     <string name="recent_app_category_title" msgid="189758417804427533">"অলপতে খোলা এপসমূহ"</string>
-    <string name="see_all_apps_title" msgid="8363320482315507386">"সকলো <xliff:g id="COUNT">%1$d</xliff:g> এপ্ চাওক"</string>
+    <plurals name="see_all_apps_title" formatted="false" msgid="6864581406735745400">
+      <item quantity="one">সম্পূৰ্ণ %1$dটা এপ্‌ চাওক</item>
+      <item quantity="other">সম্পূৰ্ণ %1$dটা এপ্‌ চাওক</item>
+    </plurals>
     <string name="forgot_password_title" msgid="3967873480875239885">"আপোনাৰ আইটি প্ৰশাসকৰ সৈতে যোগাযোগ কৰক"</string>
     <string name="forgot_password_text" msgid="2583194470767613163">"তেওঁলোকে আপোনাক অপোনাৰ পিন, আৰ্হি অথবা পাছৱৰ্ড ৰিছেট কৰাত সহায় কৰিব পাৰে"</string>
     <string name="install_all_warning" product="tablet" msgid="7010749217925069520">"আপোনাৰ টে\'বলেট আৰু ব্যক্তিগত ডেটা অজ্ঞাত এপৰ আক্ৰমণৰ বলি হোৱাৰ সম্ভাৱনা অধিক। এই উৎসৰ পৰা এপ্ ইনষ্টল কৰি, আপুনি সেইবিলাক ব্যৱহাৰ কৰাৰ ফলত আপোনাৰ টে\'বলেটৰ হ\'ব পৰা ক্ষতি বা ডেটা হানিৰ বাবে আপুনিয়ে দায়বব্ধ হ\'ব বুলি সন্মতি দিছে।"</string>
@@ -2021,6 +2028,7 @@
     <string name="spellchecker_language" msgid="8905487366580285282">"ভাষা"</string>
     <string name="keyboard_and_input_methods_category" msgid="5296847777802891649">"কীব\'র্ড"</string>
     <string name="virtual_keyboard_category" msgid="2339505603075527212">"অন-স্ক্ৰীন কীব’ৰ্ড"</string>
+    <string name="keywords_virtual_keyboard" msgid="1494726424879503434">"Gboard"</string>
     <string name="available_virtual_keyboard_category" msgid="6930012948152749337">"উপলব্ধ-অন-স্ক্ৰীন কীব’ৰ্ড"</string>
     <string name="add_virtual_keyboard" msgid="2515850206289352606">"অন-স্ক্ৰীন কীব’ৰ্ডসমূহ পৰিচালনা কৰক"</string>
     <string name="keyboard_assistance_category" msgid="7320599809770932032">"কীব\'ৰ্ড সহায়তা"</string>
@@ -3078,7 +3086,7 @@
     <string name="call_manager_title" msgid="3397433159509629466">"ক\'ল মেনেজাৰ"</string>
     <!-- no translation found for call_manager_summary (2558839230880919191) -->
     <skip />
-    <string name="cell_broadcast_settings" msgid="6414938308090183446">"জৰুৰীকালীন বিপদ-জাননী"</string>
+    <string name="cell_broadcast_settings" msgid="2416980110093867199">"ৱায়াৰলেছ জৰুৰীকালীন সতৰ্কবার্তাসমূহ"</string>
     <string name="network_operators_settings" msgid="5105453353329748954">"নেটৱৰ্ক অপাৰেটৰ"</string>
     <string name="access_point_names" msgid="5768430498022188057">"একচেছ পইণ্টসমূহৰ নাম"</string>
     <string name="enhanced_4g_lte_mode_title" msgid="6624700245232361149">"VoLTE"</string>
@@ -3297,6 +3305,7 @@
     <string name="notification_sound_default" msgid="8630353701915294299">"জাননীৰ ডিফ\'ল্ট ধ্বনি"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"এলাৰ্মৰ ডিফ\'ল্ট ধ্বনি"</string>
     <string name="vibrate_when_ringing_title" msgid="3436203665622843196">"কল আহিলে কম্পন হ\'ব"</string>
+    <string name="keywords_vibrate_for_calls" msgid="1019870409730074899">"কম্পন"</string>
     <string name="vibrate_when_ringing_option_never_vibrate" msgid="6518980907289156517">"কেতিয়াও কম্পন হ’ব নালাগে"</string>
     <string name="vibrate_when_ringing_option_always_vibrate" msgid="968652667232075466">"সদায় কম্পন হ’ব লাগে"</string>
     <string name="vibrate_when_ringing_option_ramping_ringer" msgid="2798848945803840348">"প্ৰথমে কম্পন হৈ তাৰপাছত ক্ৰমে ৰিং হ’ব লাগে"</string>
@@ -3483,6 +3492,8 @@
     <string name="bubble_app_setting_none" msgid="8643594711863996418">"একো বস্তু বাবল হ\'ব নোৱাৰে"</string>
     <string name="bubble_app_setting_selected_conversation_title" msgid="3060958976857529933">"বাৰ্তালাপ"</string>
     <string name="bubble_app_setting_excluded_conversation_title" msgid="324818960338773945">"ইয়াৰ বাহিৰে সকলো বাৰ্তালাপ বাবল হ’ব পাৰে"</string>
+    <string name="bubble_app_setting_unbubble_conversation" msgid="1769789500566080427">"এই বার্তালাপটোৰ বাবে বাবল অফ কৰক"</string>
+    <string name="bubble_app_setting_bubble_conversation" msgid="1461981680982964285">"এই বার্তালাপটোৰ বাবে বাবল অন কৰক"</string>
     <string name="swipe_direction_title" msgid="4260320464727178413">"ছোৱাইপ কাৰ্য"</string>
     <string name="swipe_direction_ltr" msgid="5137180130142633085">"অগ্ৰাহ্য কৰিবলৈ সোঁফালে ছোৱাইপ কৰক, মেনু দেখুৱাবলৈ বাওঁঁফালে ছোৱাইপ কৰক"</string>
     <string name="swipe_direction_rtl" msgid="1707391213940663992">"অগ্ৰাহ্য কৰিবলৈ বাওঁফালে ছোৱাইপ কৰক, মেনু দেখুৱাবলৈ সোঁফালে ছোৱাইপ কৰক"</string>
@@ -3627,6 +3638,7 @@
     <string name="interact_across_profiles_switch_disabled" msgid="4312196170211463988">"এই এপ্‌সমূহ সংযোগ কৰক"</string>
     <string name="interact_across_profiles_summary_1" msgid="6093976896137600231">"সংযুক্ত এপ্‌সমূহে অনুমতিসমূহ শ্বেয়াৰ কৰে আৰু পৰস্পৰে পৰস্পৰৰ ডেটালৈ এক্সেছ কৰিব পাৰে।"</string>
     <string name="interact_across_profiles_summary_2" msgid="505748305453633885">"এপ্‌সমূহে ব্যক্তিগত ডেটা আপোনাৰ আইটি প্ৰশাসকৰ সৈতে শ্বেয়াৰ নকৰে বুলি আপুনি বিশ্বাস কৰিলেহে কেৱল সেইবোৰ সংযোগ কৰক।"</string>
+    <string name="interact_across_profiles_summary_3" msgid="444428694843299854">"আপুনি আপোনাৰ ডিভাইচৰ গোপনীয়তাৰ ছেটিংসমূহত যিকোনো সময়তে এপ্‌সমূহৰ সংযোগ বিচ্ছিন্ন কৰিব পাৰে।"</string>
     <string name="interact_across_profiles_consent_dialog_title" msgid="8530621211216508681">"আপোনাৰ ব্যক্তিগত ডেটাৰ সৈতে কর্মস্থানৰ <xliff:g id="NAME">%1$s</xliff:g> সংযোগ কৰিবলৈ বিশ্বাস কৰেনে?"</string>
     <string name="interact_across_profiles_consent_dialog_summary" msgid="3949870271562055048">"এপ্‌সমূহে ব্যক্তিগত ডেটা আপোনাৰ আইটি প্ৰশাসকৰ সৈতে শ্বেয়াৰ নকৰে বুলি আপুনি বিশ্বাস কৰিলেহে কেৱল সেইবোৰ সংযোগ কৰক।"</string>
     <string name="interact_across_profiles_consent_dialog_app_data_title" msgid="8436318876213958940">"এপৰ ডেটা"</string>
@@ -3656,6 +3668,7 @@
     </plurals>
     <string name="no_channels" msgid="4716199078612071915">"এই এপটোৱে এটাও জাননী দিয়া নাই"</string>
     <string name="app_settings_link" msgid="6725453466705333311">"এপত থকা অতিৰিক্ত ছেটিংসমূহ"</string>
+    <string name="notification_screen_summary" msgid="5984915275134654822">"জাননীৰ ইতিহাস, বাবলসমূহ, শেহতীয়াকৈ পঠিওৱা"</string>
     <string name="app_notification_listing_summary_zero" msgid="2988400013221120744">"সকলো এপৰ বাবে অন কৰা হৈছে"</string>
     <plurals name="app_notification_listing_summary_others" formatted="false" msgid="1506127395400503717">
       <item quantity="one"><xliff:g id="COUNT_1">%d</xliff:g>টা এপৰ বাবে অফ কৰা হৈছে</item>
@@ -3808,7 +3821,7 @@
       <item quantity="other"><xliff:g id="APP_NAMES">%s</xliff:g>এ ব্যাঘাত জন্মাব পাৰে</item>
     </plurals>
     <string name="zen_mode_apps_bypassing_list_count" msgid="1581384924379825405">"<xliff:g id="NUMBER">%d</xliff:g> টা অধিক"</string>
-    <string name="zen_mode_bypassing_apps_title" msgid="4142154650779609193">"ব্যতিক্ৰম যোগ কৰক"</string>
+    <string name="zen_mode_bypassing_apps_title" msgid="371050263563164059">"এপ্‌সমূহ"</string>
     <string name="zen_mode_bypassing_apps_all_summary" msgid="5197566190120503132">"সকলো জাননী"</string>
     <string name="zen_mode_bypassing_apps_some_summary" msgid="1514572070650411509">"কিছুমান জাননী"</string>
     <string name="zen_mode_bypassing_app_channels_header" msgid="4011017798712587373">"ব্যাঘাত জন্মাব পৰা জাননীসমূহ"</string>
@@ -3944,6 +3957,7 @@
     </plurals>
     <string name="runtime_permissions_summary_no_permissions_granted" msgid="7456745929035665029">"কোনো অনুমতি দিয়া হোৱা নাই"</string>
     <string name="runtime_permissions_summary_no_permissions_requested" msgid="7174876170116073356">"অনুমতি বিচৰা হোৱা নাই"</string>
+    <string name="runtime_permissions_summary_control_app_access" msgid="3744591396348990500">"আপোনাৰ ডেটালৈ এপৰ এক্সেছ নিয়ন্ত্ৰণ কৰক"</string>
     <string name="filter_all_apps" msgid="6645539744080251371">"সকলো এপ্"</string>
     <string name="filter_enabled_apps" msgid="8868356616126759124">"ইনষ্টল কৰা হোৱা এপসমূহ"</string>
     <string name="filter_instant_apps" msgid="2292108467020380068">"তাৎক্ষণিক এপ্‌সমূহ"</string>
@@ -4639,6 +4653,8 @@
     <string name="platform_compat_dashboard_summary" msgid="4036546607938791337">"এপৰ সুসংগতাৰ সালসলনিসমূহ ট’গল কৰক"</string>
     <string name="platform_compat_default_enabled_title" msgid="8973137337738388024">"সক্ষম কৰা ডিফ’ল্ট সালসলনিসমূহ"</string>
     <string name="platform_compat_default_disabled_title" msgid="3975847180953793602">"অক্ষম কৰি থোৱা ডিফ’ল্ট সালসলনিসমূহ"</string>
+    <string name="platform_compat_dialog_title_no_apps" msgid="4387656000745989506">"কোনো এপ্‌ উপলব্ধ নহয়"</string>
+    <string name="platform_compat_dialog_text_no_apps" msgid="5715226015751055812">"এপৰ সুসমতা সম্পৰ্কীয় সালসলনিসমূহ ডিবাগ কৰিব পৰা এপ্‌সমূহৰ বাবেহে সংশোধন কৰিব পাৰি। এটা ডিবাগ কৰিব পৰা এপ্‌ ইনষ্টল কৰক আৰু পুনৰ চেষ্টা কৰক।"</string>
     <string name="unsupported_setting_summary" product="default" msgid="1085229417771470172">"এইটো ফ\'নত ছেটিং ব্যৱহাৰ কৰিব নোৱাৰি"</string>
     <string name="unsupported_setting_summary" product="tablet" msgid="7402414129786489664">"এইটো টেবলেটত ছেটিং ব্যৱহাৰ কৰিব নোৱাৰি"</string>
     <string name="unsupported_setting_summary" product="device" msgid="3422953459122926833">"এইটো ডিভাইচত ছেটিং ব্যৱহাৰ কৰিব নোৱাৰি"</string>
@@ -4811,6 +4827,7 @@
     <string name="network_connection_timeout_dialog_ok" msgid="6022675321823723755">"আকৌ চেষ্টা কৰক"</string>
     <string name="network_connection_errorstate_dialog_message" msgid="3360714322047603239">"কিবা এটা সমস্যা হৈছে। এপ্লিকেশ্বনটোৱে ডিভাইচ বাচনি কৰাৰ অনুৰোধ বাতিল কৰিলে।"</string>
     <string name="network_connection_connect_successful" msgid="2587314077675642476">"সংযোগ সফল হৈছে"</string>
+    <string name="network_connection_connect_failure" msgid="6803313816657494319">"সংযোগ কৰিব পৰা নগ’ল"</string>
     <string name="network_connection_request_dialog_showall" msgid="6392059758456994944">"সকলো দেখুৱাওক"</string>
     <string name="network_connection_searching_message" msgid="8521819623516926482">"ডিভাইচৰ সন্ধান কৰি থকা হৈছে…"</string>
     <string name="network_connection_connecting_message" msgid="433189540877274889">"ডিভাইচৰ সৈতে সংযোগ কৰি থকা হৈছে…"</string>
@@ -4853,14 +4870,6 @@
       <item quantity="one"><xliff:g id="SERVICE_COUNT">%1$d</xliff:g>টা এপে আপোনাৰ ডিভাইচটো সম্পূৰ্ণভাৱে এক্সেছ কৰিব পাৰে</item>
       <item quantity="other"><xliff:g id="SERVICE_COUNT">%1$d</xliff:g>টা এপে আপোনাৰ ডিভাইচটো সম্পূৰ্ণভাৱে এক্সেছ কৰিব পাৰে</item>
     </plurals>
-    <string name="manage_app_notification" msgid="8272999309499332742">"<xliff:g id="APP_NAME">%1$s</xliff:g>ৰ জাননী পৰিচালনা কৰক"</string>
-    <string name="no_suggested_app" msgid="2482015948111074654">"চুপাৰিছ কৰা কোনো এপ্লিকেশ্বন নাই"</string>
-    <plurals name="notification_few_channel_count_summary" formatted="false" msgid="6610904178351403728">
-      <item quantity="one"><xliff:g id="NOTIFICATION_CHANNEL_COUNT_1">%1$d</xliff:g>টা জাননী চ্চেনেল।</item>
-      <item quantity="other"><xliff:g id="NOTIFICATION_CHANNEL_COUNT_1">%1$d</xliff:g>টা জাননী চ্চেনেল।</item>
-    </plurals>
-    <string name="notification_many_channel_count_summary" msgid="6324166979527102233">"<xliff:g id="NOTIFICATION_CHANNEL_COUNT">%1$d</xliff:g>টা জাননী চ্চেনেল। সকলো পৰিচালনা কৰিবলৈ টিপক।"</string>
-    <string name="recently_installed_app" msgid="2899861390925377564">"আপুনি শেহতীয়াকৈ এই এপ্‌টো ইনষ্টল কৰিছে।"</string>
     <string name="media_output_panel_title" msgid="5920946795078065159">"আউটপুট সলনি কৰক"</string>
     <string name="media_output_panel_summary_of_playing_device" msgid="6998758947764222915">"বৰ্তমান <xliff:g id="DEVICE_NAME">%1$s</xliff:g>ত প্লে’ হৈ আছে"</string>
     <string name="media_output_disconnected_status" msgid="5567111639832431865">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> (সংযোগ বিচ্ছিন্ন হ\'ল)"</string>
@@ -4913,6 +4922,7 @@
     <string name="power_menu_privacy" msgid="7900052501075197854">"সংবেদনশীল সমল"</string>
     <string name="power_menu_privacy_show" msgid="2112741022037054383">"লক হৈ থকা অৱস্থাত কাৰ্ড আৰু ক্ষিপ্ৰ নিয়ন্ত্ৰণসমূহ দেখুৱাওক"</string>
     <string name="power_menu_privacy_show_controls" msgid="8294874046577167797">"লক হৈ থকা অৱস্থাত নিয়ন্ত্ৰণসমূহ দেখুৱাওক"</string>
+    <string name="power_menu_privacy_show_cards" msgid="8937303188629541026">"লক হৈ থকা অৱস্থাত কাৰ্ডসমূহ দেখুৱাওক"</string>
     <string name="power_menu_privacy_hide" msgid="1617102911157977095">"লক হৈ থকা অৱস্থাত কাৰ্ড আৰু ক্ষিপ্ৰ নিয়ন্ত্ৰণসমূহ লুকুৱাওক"</string>
     <string name="power_menu_privacy_not_secure" msgid="6247119934128206924">"ব্যৱহাৰ কৰিবলৈ প্ৰথমে এটা স্ক্ৰীন লক ছেট কৰক"</string>
     <string name="device_controls_setting_toggle" msgid="8972005569207737469">"ডিভাইচৰ নিয়ন্ত্ৰণসমূহ দেখুৱাওক"</string>
@@ -4930,4 +4940,13 @@
     <string name="no_5g_in_dsds_text" product="tablet" msgid="7460150915372077523">"২ খন ছিম ব্যৱহাৰ কৰাৰ সময়ত এই টেবলেটটোৰ ব্যৱহাৰ 4Gত সীমিত হৈ পৰিব। "<annotation id="url">"অধিক জানক"</annotation>"।"</string>
     <string name="no_5g_in_dsds_text" product="device" msgid="8206029713556021714">"২ খন ছিম ব্যৱহাৰ কৰাৰ সময়ত এই ডিভাইচটোৰ ব্যৱহাৰ 4Gত সীমিত হৈ পৰিব। "<annotation id="url">"অধিক জানক"</annotation>"।"</string>
     <string name="cached_apps_freezer" msgid="1057519579761550350">"কেশ্ব কৰা এপ্‌সমূহৰ বাবে কাৰ্যকৰীকৰণ নিলম্বন কৰক"</string>
+    <string name="overlay_settings_title" msgid="1032863083496396365">"ছেটিংসমূহত স্ক্ৰীন অ’ভাৰলে’ৰ অনুমতি দিয়ে"</string>
+    <string name="overlay_settings_summary" msgid="2745336273786148166">"এনে এপ্‌সমূহক অনুমতি দিয়ে যি ছেটিংসমূহৰ স্ক্ৰীনসমূহ অ’ভাৰলে’ কৰিবলৈ অন্য এপ্‌সমূহৰ ওপৰত প্ৰদৰ্শিত হ’ব পাৰে"</string>
+    <string name="media_controls_title" msgid="403271085636252597">"মিডিয়া"</string>
+    <string name="media_controls_summary" msgid="5032071475867165587">"মিডিয়া ছেশ্বনটো সমাপ্ত হ’লে প্লে’য়াৰটো লুকুৱাওক"</string>
+    <string name="media_controls_resume_description" msgid="2333689676163363582">"প্লে’য়াৰটোৱে আপোনাক বিস্তাৰ কৰা ক্ষিপ্ৰ ছেটিংসমূহৰ পেনেলটোৰ পৰা কোনো ছেশ্বন পুনৰ আৰম্ভ কৰিবলৈ দিয়ে।"</string>
+    <string name="media_controls_hide_player" msgid="2751439192580884015">"প্লে’য়াৰটো লুকুৱাওক"</string>
+    <string name="media_controls_show_player" msgid="8504571042365814021">"প্লে’য়াৰটো দেখুৱাওক"</string>
+    <string name="media_controls_no_players" msgid="3493023121892175946">"কোনো প্লে’য়াৰ উপলব্ধ নহয়"</string>
+    <string name="keywords_media_controls" msgid="8345490568291778638">"মিডিয়া"</string>
 </resources>

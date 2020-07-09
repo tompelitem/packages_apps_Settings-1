@@ -121,6 +121,7 @@ import com.android.settings.notification.SoundSettings;
 import com.android.settings.notification.app.AppBubbleNotificationSettings;
 import com.android.settings.notification.app.AppNotificationSettings;
 import com.android.settings.notification.app.ChannelNotificationSettings;
+import com.android.settings.notification.app.ConversationListSettings;
 import com.android.settings.notification.history.NotificationStation;
 import com.android.settings.notification.zen.ZenAccessSettings;
 import com.android.settings.notification.zen.ZenModeAutomationSettings;
@@ -137,6 +138,7 @@ import com.android.settings.security.CryptKeeperSettings;
 import com.android.settings.security.LockscreenDashboardFragment;
 import com.android.settings.security.SecuritySettings;
 import com.android.settings.shortcut.CreateShortcut;
+import com.android.settings.sound.MediaControlsSettings;
 import com.android.settings.support.SupportDashboardActivity;
 import com.android.settings.system.ResetDashboardFragment;
 import com.android.settings.system.SystemDashboardFragment;
@@ -243,6 +245,7 @@ public class SettingsGateway {
             PhysicalKeyboardFragment.class.getName(),
             ZenModeSettings.class.getName(),
             SoundSettings.class.getName(),
+            ConversationListSettings.class.getName(),
             ConfigureNotificationSettings.class.getName(),
             ChooseLockPassword.ChooseLockPasswordFragment.class.getName(),
             ChooseLockPattern.ChooseLockPatternFragment.class.getName(),
@@ -303,7 +306,8 @@ public class SettingsGateway {
             BugReportHandlerPicker.class.getName(),
             GestureNavigationSettingsFragment.class.getName(),
             InteractAcrossProfilesSettings.class.getName(),
-            InteractAcrossProfilesDetails.class.getName()
+            InteractAcrossProfilesDetails.class.getName(),
+            MediaControlsSettings.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

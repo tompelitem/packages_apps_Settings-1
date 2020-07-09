@@ -158,6 +158,7 @@ public class Settings extends SettingsActivity {
     public static class ZenModeEventRuleSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SoundSettingsActivity extends SettingsActivity { /* empty */ }
     public static class ConfigureNotificationSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class ConversationListSettingsActivity extends SettingsActivity { /* empty */ }
     public static class AppBubbleNotificationSettingsActivity extends SettingsActivity { /* empty */ }
     public static class NotificationAssistantSettingsActivity extends SettingsActivity{ /* empty */ }
     public static class NotificationAppListActivity extends SettingsActivity { /* empty */ }
@@ -236,5 +237,10 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
     public static class SupportDashboardActivity extends SettingsActivity {}
     public static class SMQQtiFeedbackActivity extends SettingsActivity { /* empty */ }
+
+    /**
+     * Activity for MediaControlsSettings
+     */
+    public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
 }

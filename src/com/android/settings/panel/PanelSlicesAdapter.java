@@ -75,6 +75,8 @@ public class PanelSlicesAdapter
         View view;
         if (viewType == PanelContent.VIEW_TYPE_SLIDER) {
             view = inflater.inflate(R.layout.panel_slice_slider_row, viewGroup, false);
+        } else if (viewType == PanelContent.VIEW_TYPE_SLIDER_LARGE_ICON) {
+            view = inflater.inflate(R.layout.panel_slice_slider_row_large_icon, viewGroup, false);
         } else {
             view = inflater.inflate(R.layout.panel_slice_row, viewGroup, false);
         }
@@ -143,12 +145,12 @@ public class PanelSlicesAdapter
             } else if (position == 0 && (slice.getUri().equals(MEDIA_OUTPUT_SLICE_URI)
                     || slice.getUri().equals(MEDIA_OUTPUT_GROUP_SLICE_URI))) {
                 sliceView.setClickable(false);
-                // Customize output switcher slice top padding
-                final int paddingTop = mPanelFragment.getResources().getDimensionPixelSize(
+                // Customize output switcher slice padding
+                final int padding = mPanelFragment.getResources().getDimensionPixelSize(
                         R.dimen.output_switcher_slice_padding_top);
-                mSliceSliderLayout.setPadding(mSliceSliderLayout.getPaddingLeft(), paddingTop,
+                mSliceSliderLayout.setPadding(mSliceSliderLayout.getPaddingLeft(), padding,
                         mSliceSliderLayout.getPaddingRight(),
-                        mSliceSliderLayout.getPaddingBottom());
+                        padding);
             }
 
             // Log Panel interaction
@@ -173,7 +175,7 @@ public class PanelSlicesAdapter
 
         @Override
         public boolean isDividerAllowedBelow() {
-            return true;
+            return mPanelFragment.getPanelViewType() != PanelContent.VIEW_TYPE_SLIDER_LARGE_ICON;
         }
     }
 }

@@ -149,6 +149,7 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.conquer.settings.ControlPanel;
+import com.conquer.settings.fragments.ThemeManager;
 
 public class SettingsGateway {
 
@@ -286,7 +287,8 @@ public class SettingsGateway {
             MobileNetworkListFragment.class.getName(),
             GlobalActionsPanelSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
-            ControlPanel.class.getName()
+            ControlPanel.class.getName(),
+            ThemeManager.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -327,5 +329,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.ControlPanelActivity.class.getName(),
+            Settings.ThemeManagerActivity.class.getName
     };
 }

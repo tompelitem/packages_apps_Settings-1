@@ -127,4 +127,8 @@
     <string name="adaptive_playback_timeout_10_min">10 minutes</string>
     <string name="adaptive_playback_timeout_10_min_summary">On (10 minutes)</string>
 
+    <!-- ThemeManager -->
+    <string name="dashboard_theme_manager_title">Theme Manager</string>
+    <string name="dashboard_theme_manager_summary">Personalize your device theme</string>
+
 </resources>

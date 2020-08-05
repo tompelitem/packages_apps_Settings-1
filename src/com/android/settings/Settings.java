@@ -183,4 +183,7 @@ public class Settings extends SettingsActivity {
     // ControlPanel
     public static class ControlPanelActivity extends SettingsActivity { /* empty */ }
 
+   // ThemeManager
+    public static class ThemeManagerActivity extends SettingsActivity { /* empty */ }
+
 }

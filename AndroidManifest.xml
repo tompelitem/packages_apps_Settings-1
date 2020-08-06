@@ -3369,7 +3369,7 @@
         </activity>
 
         <!-- ThemeManager -->
-        <activity android:name="Settings$ThemeManagerlActivity"
+        <activity android:name="Settings$ThemeManagerActivity"
             android:label="@string/dashboard_theme_manager_title"
             android:icon="@drawable/ic_homepage_thememanager"
             android:taskAffinity="com.android.settings">
@@ -3390,7 +3390,7 @@
                 android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.order" android:value="-105"/>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.conquer.settings.ControlPanel" />
+                android:value="com.conquer.settings.fragments.ThemeManager" />
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
             <meta-data android:name="com.android.settings.summary"

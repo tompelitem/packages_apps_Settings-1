@@ -329,6 +329,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.ControlPanelActivity.class.getName(),
-            Settings.ThemeManagerActivity.class.getName
+            Settings.ThemeManagerActivity.class.getName()
     };
 }

@@ -162,6 +162,8 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.conquer.settings.GlobalActionsSettings;
 
+import com.conquer.settings.ControlPanel;
+
 public class SettingsGateway {
 
     /**
@@ -310,6 +312,7 @@ public class SettingsGateway {
             InteractAcrossProfilesSettings.class.getName(),
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
+            ControlPanel.class.getName(),
             GlobalActionsSettings.class.getName()
     };
 
@@ -352,5 +355,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.GlobalActionsSettingsActivity.class.getName(),
+            Settings.FeaturesActivity.class.getName(),
     };
 }
